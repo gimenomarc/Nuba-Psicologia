@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Servicios = () => {
   const { t } = useTranslation();
@@ -16,6 +17,223 @@ const Servicios = () => {
           </h1>
         </div>
 
+        {/* Nueva Sección Visual: Serveis de consulta i acompanyament psicològic */}
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
+              Serveis de consulta i acompanyament psicològic
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Teràpia familiar */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/20 to-transparent z-10"></div>
+              <div className="relative h-full flex flex-col">
+                <div className="h-64 bg-gradient-to-br from-salmon-200 via-rose-200 to-lilac-200 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="w-24 h-24 bg-white/90 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <svg className="w-12 h-12 text-salmon-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white p-10 flex flex-col flex-grow">
+                  <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Teràpia familiar</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
+                    Quan una família travessa canvis i costa entendre's, la teràpia pot ser l'espai per escoltar-se millor, comprendre què està passant i crear noves maneres de relacionar-se que permetin estar junts amb més calma, claredat i connexió.
+                  </p>
+                  <Link
+                    to="#terapia-familiar"
+                    className="inline-flex items-center gap-2 text-salmon-600 hover:text-salmon-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  >
+                    Més informació
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Acompanyament psicològic */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-100/20 to-transparent z-10"></div>
+              <div className="relative h-full flex flex-col">
+                <div className="h-64 bg-gradient-to-br from-rose-200 via-salmon-200 to-lilac-200 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="w-24 h-24 bg-white/90 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <svg className="w-12 h-12 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white p-10 flex flex-col flex-grow">
+                  <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Acompanyament psicològic</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
+                    Quan els reptes de la vida pesen més del compte, l'acompanyament psicològic ofereix un espai segur per comprendre què et passa, descobrir els teus propis recursos i avançar amb més claredat, equilibri i confiança.
+                  </p>
+                  <Link
+                    to="#asesoramiento"
+                    className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  >
+                    Més informació
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Teràpia de parella */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all">
+              <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/20 to-transparent z-10"></div>
+              <div className="relative h-full flex flex-col">
+                <div className="h-64 bg-gradient-to-br from-lilac-200 via-rose-200 to-salmon-200 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="w-24 h-24 bg-white/90 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <svg className="w-12 h-12 text-lilac-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white p-10 flex flex-col flex-grow">
+                  <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Teràpia de parella</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
+                    Quan la relació es desordena i costa trobar-se, la teràpia pot ser l'espai per posar-hi paraules, recuperar la connexió i construir, amb més consciència, una manera de relacionar-se més segura i satisfactòria.
+                  </p>
+                  <Link
+                    to="#terapia-pareja"
+                    className="inline-flex items-center gap-2 text-lilac-600 hover:text-lilac-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  >
+                    Més informació
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Sexualitat */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/20 to-rose-100/20 z-10"></div>
+              <div className="relative h-full flex flex-col">
+                <div className="h-64 bg-gradient-to-br from-salmon-200 via-lilac-200 to-rose-200 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="w-24 h-24 bg-white/90 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <svg className="w-12 h-12 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white p-10 flex flex-col flex-grow">
+                  <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Sexualitat</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
+                    Quan la sexualitat es veu entelada per dubtes o incomoditats, la teràpia pot ser un espai segur per descobrir-se, recuperar la confiança i reconnectar amb el plaer, la intimitat i la llibertat de viure-la d'una manera més plena.
+                  </p>
+                  <Link
+                    to="#terapia-sexual"
+                    className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  >
+                    Més informació
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nueva Sección Visual: Serveis Tallers */}
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-rose-600 to-lilac-600 bg-clip-text text-transparent">
+              SERVEIS TALLERS
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Serveis de tallers grupals
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Per infants i adolescents */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-100/20 to-transparent z-10"></div>
+              <div className="relative h-full flex flex-col">
+                <div className="h-64 bg-gradient-to-br from-rose-200 via-salmon-200 to-lilac-200 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="w-24 h-24 bg-white/90 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <svg className="w-12 h-12 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white p-10 flex flex-col flex-grow">
+                  <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Per infants i adolescents</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
+                    Tallers pensats per afavorir l'autoconeixement, les relacions sanes i la comunicació, dotant-los d'eines emocionals i socials per créixer amb més seguretat, respecte i consciència.
+                  </p>
+                  <Link
+                    to="#talleres-ninos"
+                    className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  >
+                    Més informació
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Per famílies */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all">
+              <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/20 to-transparent z-10"></div>
+              <div className="relative h-full flex flex-col">
+                <div className="h-64 bg-gradient-to-br from-lilac-200 via-rose-200 to-salmon-200 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="w-24 h-24 bg-white/90 rounded-3xl flex items-center justify-center shadow-2xl">
+                      <svg className="w-12 h-12 text-lilac-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white p-10 flex flex-col flex-grow">
+                  <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Per famílies</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
+                    Espais d'acompanyament per millorar la comunicació amb els fills, comprendre els seus processos i afrontar reptes com l'adolescència, la sexualitat o l'assetjament des d'una mirada propera i respectuosa.
+                  </p>
+                  <Link
+                    to="#talleres-familias"
+                    className="inline-flex items-center gap-2 text-lilac-600 hover:text-lilac-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  >
+                    Més informació
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Consulta Psicológica - Introducción */}
         <section className="mb-32">
           <div className="text-center mb-16">
@@ -29,7 +247,7 @@ const Servicios = () => {
 
           <div className="space-y-16">
             {/* Terapia de Pareja */}
-            <div className="relative group">
+            <div id="terapia-pareja" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
                 <div className="flex items-start gap-8 mb-8">
@@ -70,7 +288,7 @@ const Servicios = () => {
             </div>
 
             {/* Terapia Familiar */}
-            <div className="relative group">
+            <div id="terapia-familiar" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
                 <div className="flex items-start gap-8 mb-8">
@@ -111,7 +329,7 @@ const Servicios = () => {
             </div>
 
             {/* Terapia Sexual */}
-            <div className="relative group">
+            <div id="terapia-sexual" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
                 <div className="flex items-start gap-8 mb-8">
@@ -199,7 +417,7 @@ const Servicios = () => {
             </div>
 
             {/* Asesoramiento */}
-            <div className="relative group">
+            <div id="asesoramiento" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
                 <div className="flex items-start gap-8 mb-8">
@@ -264,7 +482,7 @@ const Servicios = () => {
           </div>
 
           {/* Talleres para Niños y Adolescentes */}
-          <div className="mb-20">
+          <div id="talleres-ninos" className="mb-20 scroll-mt-24">
             <div className="text-center mb-12">
               <h3 className="text-4xl font-extrabold mb-4 text-gray-800">
                 Per a Infants i Adolescents
@@ -569,7 +787,7 @@ const Servicios = () => {
           </div>
 
           {/* Talleres para Familias */}
-          <div className="mt-20">
+          <div id="talleres-familias" className="mt-20 scroll-mt-24">
             <div className="text-center mb-12">
               <h3 className="text-4xl font-extrabold mb-4 text-gray-800">
                 Per a Famílies / Pares i Mares

@@ -14,12 +14,12 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* Navegación */}
-      <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-gray-100">
+      <nav className="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center group">
-              <div className="text-2xl font-bold bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent group-hover:from-salmon-700 group-hover:to-rose-700 transition-all">
+              <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent group-hover:from-salmon-700 group-hover:to-rose-700 transition-all">
                 Núria Llurba
               </div>
             </Link>
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
               </Link>
               <Link
                 to="/contacto"
-                className="bg-gradient-to-r from-salmon-500 to-rose-500 text-white px-5 py-2.5 rounded-full hover:from-salmon-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl font-medium text-sm"
+                className="bg-gradient-to-r from-salmon-500 to-rose-500 text-white px-6 py-2.5 rounded-full hover:from-salmon-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl font-semibold text-sm hover:scale-105"
               >
                 {t('nav.contacto')}
               </Link>

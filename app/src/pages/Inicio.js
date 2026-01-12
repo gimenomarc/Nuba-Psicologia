@@ -99,37 +99,49 @@ const Inicio = () => {
       </section>
 
       {/* Sección de números/estadísticas */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-32 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-salmon-50/30 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                <span className="text-3xl font-extrabold text-white">+</span>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div className="text-center group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
+              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
+                  <span className="text-3xl font-extrabold text-white">+</span>
+                </div>
+                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">5</h3>
+                <p className="text-lg text-gray-600 font-semibold">Anys d'experiència</p>
               </div>
-              <h3 className="text-4xl font-extrabold text-gray-800 mb-2">5</h3>
-              <p className="text-gray-600 font-medium">Anys d'experiència</p>
             </div>
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                <span className="text-3xl font-extrabold text-white">+</span>
+            <div className="text-center group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
+              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
+                  <span className="text-3xl font-extrabold text-white">+</span>
+                </div>
+                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">100%</h3>
+                <p className="text-lg text-gray-600 font-semibold">Confidencialitat</p>
               </div>
-              <h3 className="text-4xl font-extrabold text-gray-800 mb-2">100%</h3>
-              <p className="text-gray-600 font-medium">Confidencialitat</p>
             </div>
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                <span className="text-3xl font-extrabold text-white">✓</span>
+            <div className="text-center group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
+              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
+                  <span className="text-3xl font-extrabold text-white">✓</span>
+                </div>
+                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">Online</h3>
+                <p className="text-lg text-gray-600 font-semibold">Des de qualsevol lloc</p>
               </div>
-              <h3 className="text-4xl font-extrabold text-gray-800 mb-2">Online</h3>
-              <p className="text-gray-600 font-medium">Des de qualsevol lloc</p>
             </div>
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                <span className="text-3xl font-extrabold text-white">∞</span>
+            <div className="text-center group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-rose-100/30 rounded-3xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
+              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
+                  <span className="text-3xl font-extrabold text-white">∞</span>
+                </div>
+                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">Gratuïta</h3>
+                <p className="text-lg text-gray-600 font-semibold">Primera consulta</p>
               </div>
-              <h3 className="text-4xl font-extrabold text-gray-800 mb-2">Gratuïta</h3>
-              <p className="text-gray-600 font-medium">Primera consulta</p>
             </div>
           </div>
         </div>
@@ -360,9 +372,9 @@ const Inicio = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Consulta Psicológica */}
-            <div className="group relative">
+            <div className="group relative flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-salmon-200/50 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -371,7 +383,7 @@ const Inicio = () => {
                 <h3 className="text-3xl font-bold mb-4 text-gray-800">
                   {t('servicios.consulta.titulo')}
                 </h3>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed flex-grow">
                   Un espai de confiança i cura personalitzat, on poder parlar obertament 
                   de les pròpies emocions, dificultats i necessitats.
                 </p>
@@ -395,7 +407,7 @@ const Inicio = () => {
                 </ul>
                 <Link
                   to="/servicios"
-                  className="inline-flex items-center gap-2 text-salmon-600 hover:text-salmon-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  className="inline-flex items-center gap-2 text-salmon-600 hover:text-salmon-700 font-bold group-hover:gap-3 transition-all text-lg mt-auto"
                 >
                   Veure més
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -406,9 +418,9 @@ const Inicio = () => {
             </div>
 
             {/* Talleres */}
-            <div className="group relative">
+            <div className="group relative flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-200/50 to-transparent rounded-3xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
-              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -417,7 +429,7 @@ const Inicio = () => {
                 <h3 className="text-3xl font-bold mb-4 text-gray-800">
                   {t('servicios.talleres.titulo')}
                 </h3>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed flex-grow">
                   Espais vivencials i participatius que permeten aprendre, compartir i créixer en grup. 
                   Per a nens, adolescents i famílies.
                 </p>
@@ -437,7 +449,7 @@ const Inicio = () => {
                 </ul>
                 <Link
                   to="/servicios"
-                  className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-bold group-hover:gap-3 transition-all text-lg mt-auto"
                 >
                   Veure més
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -448,9 +460,9 @@ const Inicio = () => {
             </div>
 
             {/* Club Hípic */}
-            <div className="group relative">
+            <div className="group relative flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-lilac-200/50 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -459,7 +471,7 @@ const Inicio = () => {
                 <h3 className="text-3xl font-bold mb-4 text-gray-800">
                   {t('nav.clubHipic')}
                 </h3>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed flex-grow">
                   Teràpia amb cavalls i activitats vivencials. Mindfulness, superació de pors, 
                   reforç emocional i team building.
                 </p>
@@ -479,7 +491,7 @@ const Inicio = () => {
                 </ul>
                 <Link
                   to="/club-hipic"
-                  className="inline-flex items-center gap-2 text-lilac-600 hover:text-lilac-700 font-bold group-hover:gap-3 transition-all text-lg"
+                  className="inline-flex items-center gap-2 text-lilac-600 hover:text-lilac-700 font-bold group-hover:gap-3 transition-all text-lg mt-auto"
                 >
                   Veure més
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
