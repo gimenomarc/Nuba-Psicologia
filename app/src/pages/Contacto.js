@@ -45,7 +45,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className="py-32 bg-gradient-to-b from-white via-salmon-50/20 to-white relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-salmon-50/20 via-white to-rose-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -62,7 +62,7 @@ const Contacto = () => {
 
         {/* Tabs para seleccionar tipo de formulario */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-full p-1.5 shadow-xl border border-gray-100 inline-flex gap-2">
+          <div className="bg-gradient-to-br from-white via-salmon-50/30 to-white rounded-full p-1.5 shadow-xl border border-salmon-100/50 inline-flex gap-2">
             <button
               onClick={() => setActiveForm('informacion')}
               className={`px-8 py-3 rounded-full transition-all font-semibold ${
@@ -88,7 +88,7 @@ const Contacto = () => {
 
         {/* Formulario de Información */}
         {activeForm === 'informacion' && (
-          <div className="bg-white rounded-3xl shadow-2xl p-10 border border-gray-100">
+          <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl shadow-2xl p-10 border border-salmon-100/50">
             <h2 className="text-3xl font-extrabold mb-8 text-gray-800 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
               {t('formularios.informacion.titulo')}
             </h2>
@@ -207,7 +207,7 @@ const Contacto = () => {
 
         {/* Formulario de Cita Previa */}
         {activeForm === 'cita' && (
-          <div className="bg-white rounded-3xl shadow-2xl p-10 border border-gray-100">
+          <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl shadow-2xl p-10 border border-salmon-100/50">
             <h2 className="text-3xl font-extrabold mb-8 text-gray-800 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
               {t('formularios.cita.titulo')}
             </h2>

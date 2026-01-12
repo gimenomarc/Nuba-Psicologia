@@ -5,7 +5,7 @@ const Servicios = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="py-32 bg-gradient-to-b from-white via-salmon-50/20 to-white relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-salmon-50/20 via-white to-rose-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
@@ -40,7 +40,7 @@ const Servicios = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white p-10 flex flex-col flex-grow">
+                <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 flex flex-col flex-grow">
                   <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Teràpia familiar</h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
                     Quan una família travessa canvis i costa entendre's, la teràpia pot ser l'espai per escoltar-se millor, comprendre què està passant i crear noves maneres de relacionar-se que permetin estar junts amb més calma, claredat i connexió.
@@ -72,7 +72,7 @@ const Servicios = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white p-10 flex flex-col flex-grow">
+                <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 flex flex-col flex-grow">
                   <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Acompanyament psicològic</h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
                     Quan els reptes de la vida pesen més del compte, l'acompanyament psicològic ofereix un espai segur per comprendre què et passa, descobrir els teus propis recursos i avançar amb més claredat, equilibri i confiança.
@@ -104,7 +104,7 @@ const Servicios = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white p-10 flex flex-col flex-grow">
+                <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 flex flex-col flex-grow">
                   <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Teràpia de parella</h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
                     Quan la relació es desordena i costa trobar-se, la teràpia pot ser l'espai per posar-hi paraules, recuperar la connexió i construir, amb més consciència, una manera de relacionar-se més segura i satisfactòria.
@@ -136,7 +136,7 @@ const Servicios = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white p-10 flex flex-col flex-grow">
+                <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 flex flex-col flex-grow">
                   <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Sexualitat</h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
                     Quan la sexualitat es veu entelada per dubtes o incomoditats, la teràpia pot ser un espai segur per descobrir-se, recuperar la confiança i reconnectar amb el plaer, la intimitat i la llibertat de viure-la d'una manera més plena.
@@ -182,7 +182,7 @@ const Servicios = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white p-10 flex flex-col flex-grow">
+                <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 flex flex-col flex-grow">
                   <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Per infants i adolescents</h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
                     Tallers pensats per afavorir l'autoconeixement, les relacions sanes i la comunicació, dotant-los d'eines emocionals i socials per créixer amb més seguretat, respecte i consciència.
@@ -214,7 +214,7 @@ const Servicios = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white p-10 flex flex-col flex-grow">
+                <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 flex flex-col flex-grow">
                   <h3 className="text-3xl font-extrabold mb-6 text-gray-800">Per famílies</h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow">
                     Espais d'acompanyament per millorar la comunicació amb els fills, comprendre els seus processos i afrontar reptes com l'adolescència, la sexualitat o l'assetjament des d'una mirada propera i respectuosa.
@@ -249,7 +249,7 @@ const Servicios = () => {
             {/* Terapia de Pareja */}
             <div id="terapia-pareja" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
                 <div className="flex items-start gap-8 mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -290,7 +290,7 @@ const Servicios = () => {
             {/* Terapia Familiar */}
             <div id="terapia-familiar" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
                 <div className="flex items-start gap-8 mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -331,7 +331,7 @@ const Servicios = () => {
             {/* Terapia Sexual */}
             <div id="terapia-sexual" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
                 <div className="flex items-start gap-8 mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -375,7 +375,7 @@ const Servicios = () => {
             {/* Psicología Perinatal */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
                 <div className="flex items-start gap-8 mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-salmon-300 to-salmon-500 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -419,7 +419,7 @@ const Servicios = () => {
             {/* Asesoramiento */}
             <div id="asesoramiento" className="relative group scroll-mt-24">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
                 <div className="flex items-start gap-8 mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-rose-300 to-rose-500 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -490,7 +490,7 @@ const Servicios = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Acoso Escolar */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -532,7 +532,7 @@ const Servicios = () => {
               </div>
 
               {/* Emocional */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -574,7 +574,7 @@ const Servicios = () => {
               </div>
 
               {/* Sexualidad - Parte 1 */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -616,7 +616,7 @@ const Servicios = () => {
               </div>
 
               {/* Sexualidad - Parte 2 */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -658,7 +658,7 @@ const Servicios = () => {
               </div>
 
               {/* Relaciones Sanas */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -700,7 +700,7 @@ const Servicios = () => {
               </div>
 
               {/* Comunicación */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -739,7 +739,7 @@ const Servicios = () => {
               </div>
 
               {/* Adolescencia */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all lg:col-span-2">
+              <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-10 shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all lg:col-span-2">
                 <div className="flex items-start gap-8">
                   <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -795,7 +795,7 @@ const Servicios = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Comunicar con adolescentes */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -837,7 +837,7 @@ const Servicios = () => {
               </div>
 
               {/* Sexualidad en familia */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -879,7 +879,7 @@ const Servicios = () => {
               </div>
 
               {/* Acoso escolar desde casa */}
-              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+              <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
                 <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -931,14 +931,14 @@ const Servicios = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
+            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Teràpia Familiar i de Parella</h3>
               <div className="flex-grow flex flex-col justify-center">
                 <p className="text-4xl font-extrabold text-salmon-600 mb-2">70€</p>
                 <p className="text-gray-600">la sessió</p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
+            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Sexualitat i Psicologia Perinatal</h3>
               <div className="flex-grow flex flex-col justify-center">
                 <div className="mb-4">
@@ -951,7 +951,7 @@ const Servicios = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
+            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Acompanyament i Assessorament</h3>
               <div className="flex-grow flex flex-col justify-center">
                 <p className="text-4xl font-extrabold text-lilac-600 mb-2">50€</p>

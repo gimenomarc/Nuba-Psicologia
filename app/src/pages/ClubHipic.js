@@ -5,7 +5,7 @@ const ClubHipic = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="py-32 bg-gradient-to-b from-white via-lilac-50/20 to-white relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-lilac-50/20 via-white to-salmon-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-lilac-200 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
@@ -24,7 +24,7 @@ const ClubHipic = () => {
           {/* Mindfulness con Caballos */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ const ClubHipic = () => {
           {/* Superar Pors y Traumes */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ const ClubHipic = () => {
           {/* Refuerzo Emocional */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ const ClubHipic = () => {
           {/* Team Building */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-salmon-300 to-salmon-500 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,7 +153,7 @@ const ClubHipic = () => {
           {/* Excursiones Escolares */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -186,7 +186,7 @@ const ClubHipic = () => {
           {/* Hípic Clínic */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

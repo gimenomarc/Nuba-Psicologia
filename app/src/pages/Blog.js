@@ -17,7 +17,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="py-32 bg-gradient-to-b from-white via-rose-50/20 to-white relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-rose-50/20 via-white to-lilac-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
@@ -35,7 +35,7 @@ const Blog = () => {
         {articulos.length === 0 ? (
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-16 shadow-2xl border border-gray-100 text-center">
+            <div className="relative bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-16 shadow-2xl border border-rose-100/50 text-center">
               <div className="w-24 h-24 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center mx-auto mb-8">
                 <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -57,7 +57,7 @@ const Blog = () => {
                 className="group relative flex flex-col"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-                <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all flex flex-col h-full">
+                <div className="relative bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl shadow-xl overflow-hidden border border-rose-100/50 hover:shadow-2xl transition-all flex flex-col h-full">
                   <div className="h-64 bg-gradient-to-br from-salmon-200 to-rose-200 overflow-hidden">
                     <img
                       src={articulo.imagen}

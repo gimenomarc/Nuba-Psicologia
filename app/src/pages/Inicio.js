@@ -41,7 +41,7 @@ const Inicio = () => {
                   to="/contacto"
                   className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-salmon-500 to-rose-500 text-white px-10 py-5 rounded-full font-bold hover:from-salmon-600 hover:to-rose-600 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 text-lg"
                 >
-                  Primera consulta gratuïta
+                  Contacta'm
                   <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -76,7 +76,7 @@ const Inicio = () => {
                       </svg>
                     </div>
                     <div className="flex-1 pt-2">
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">Primera consulta gratuïta</h3>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">Contacte inicial</h3>
                       <p className="text-gray-600 leading-relaxed">Valorem junts si sóc la professional adequada per al teu cas</p>
                     </div>
                   </div>
@@ -98,57 +98,50 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Sección de números/estadísticas */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-salmon-50/30 to-transparent"></div>
+      {/* Sección de valores destacados */}
+      <section className="py-24 bg-gradient-to-b from-lilac-50/50 via-white to-rose-50/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-salmon-50/20 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-            <div className="text-center group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                  <span className="text-3xl font-extrabold text-white">+</span>
-                </div>
-                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">5</h3>
-                <p className="text-lg text-gray-600 font-semibold">Anys d'experiència</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
               </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Experiència Comprovada</h3>
+              <p className="text-base text-gray-600 leading-relaxed">
+                Més de 5 anys d'experiència en psicologia forense, psicoteràpia i teràpia especialitzada
+              </p>
             </div>
-            <div className="text-center group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                  <span className="text-3xl font-extrabold text-white">+</span>
-                </div>
-                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">100%</h3>
-                <p className="text-lg text-gray-600 font-semibold">Confidencialitat</p>
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
               </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Confidencialitat Absoluta</h3>
+              <p className="text-base text-gray-600 leading-relaxed">
+                Totes les sessions es duen a terme sota un compromís absolut de confidencialitat i respecte
+              </p>
             </div>
-            <div className="text-center group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                  <span className="text-3xl font-extrabold text-white">✓</span>
-                </div>
-                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">Online</h3>
-                <p className="text-lg text-gray-600 font-semibold">Des de qualsevol lloc</p>
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </div>
-            </div>
-            <div className="text-center group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-rose-100/30 rounded-3xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-3xl mb-6 group-hover:scale-110 transition-transform shadow-xl">
-                  <span className="text-3xl font-extrabold text-white">∞</span>
-                </div>
-                <h3 className="text-5xl font-extrabold text-gray-800 mb-3">Gratuïta</h3>
-                <p className="text-lg text-gray-600 font-semibold">Primera consulta</p>
-              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Modalitat Flexible</h3>
+              <p className="text-base text-gray-600 leading-relaxed">
+                Teràpia online o presencial, adaptada a les teves necessitats i circumstàncies
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Nueva Sección: Por qué elegirme */}
-      <section className="py-32 bg-gradient-to-b from-white via-rose-50/20 to-white relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-rose-50/30 via-white to-salmon-50/20 relative overflow-hidden">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
@@ -163,7 +156,7 @@ const Inicio = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 group">
+            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group">
               <div className="w-14 h-14 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
@@ -174,7 +167,7 @@ const Inicio = () => {
                 Trajectòria amb menors víctimes d'abús sexual en l'equip d'assessorament tècnic penal (Jutjats de Barcelona)
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 group">
+            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group">
               <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-rose-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -185,7 +178,7 @@ const Inicio = () => {
                 Formant part de l'equip terapèutic de la universitat, especialitzada en sexualitat i teràpia de parella
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 group">
+            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group">
               <div className="w-14 h-14 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -196,7 +189,7 @@ const Inicio = () => {
                 Especialització en psicologia perinatal i properament també en neuropsicologia per oferir un servei complet
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 group">
+            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group">
               <div className="w-14 h-14 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -212,7 +205,7 @@ const Inicio = () => {
       </section>
 
       {/* Valores y Enfoque - Mejorado */}
-      <section className="py-32 bg-gradient-to-b from-white via-salmon-50/20 to-white relative">
+      <section className="py-32 bg-gradient-to-b from-salmon-50/20 via-white to-lilac-50/20 relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
@@ -230,7 +223,7 @@ const Inicio = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-salmon-100 to-transparent rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform"></div>
-              <div className="relative text-center p-10 bg-white rounded-3xl shadow-xl border border-salmon-100 group-hover:shadow-2xl transition-all">
+              <div className="relative text-center p-10 bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl shadow-xl border border-salmon-100/50 group-hover:shadow-2xl transition-all">
                 <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform shadow-xl">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -245,7 +238,7 @@ const Inicio = () => {
             </div>
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-100 to-transparent rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform"></div>
-              <div className="relative text-center p-10 bg-white rounded-3xl shadow-xl border border-rose-100 group-hover:shadow-2xl transition-all">
+              <div className="relative text-center p-10 bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl shadow-xl border border-rose-100/50 group-hover:shadow-2xl transition-all">
                 <div className="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform shadow-xl">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -260,7 +253,7 @@ const Inicio = () => {
             </div>
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-lilac-100 to-transparent rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform"></div>
-              <div className="relative text-center p-10 bg-white rounded-3xl shadow-xl border border-lilac-100 group-hover:shadow-2xl transition-all">
+              <div className="relative text-center p-10 bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl shadow-xl border border-lilac-100/50 group-hover:shadow-2xl transition-all">
                 <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform shadow-xl">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -278,7 +271,7 @@ const Inicio = () => {
       </section>
 
       {/* Nueva Sección: Proceso de trabajo */}
-      <section className="py-32 bg-gradient-to-b from-white via-lilac-50/20 to-white relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-lilac-50/20 via-white to-salmon-50/20 relative overflow-hidden">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-lilac-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
@@ -296,7 +289,7 @@ const Inicio = () => {
             {/* Línea conectora */}
             <div className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-salmon-200 via-rose-200 to-lilac-200"></div>
             
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100 text-center group hover:shadow-2xl transition-all">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-lg">1</span>
@@ -305,12 +298,12 @@ const Inicio = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Contacte inicial</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Em contactes per telèfon o email per sol·licitar una primera consulta gratuïta
+                  Em contactes per telèfon o email per sol·licitar una consulta inicial
                 </p>
               </div>
             </div>
 
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100 text-center group hover:shadow-2xl transition-all">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-lg">2</span>
@@ -324,7 +317,7 @@ const Inicio = () => {
               </div>
             </div>
 
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100 text-center group hover:shadow-2xl transition-all">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-lg">3</span>
@@ -338,7 +331,7 @@ const Inicio = () => {
               </div>
             </div>
 
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100 text-center group hover:shadow-2xl transition-all">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                 <div className="w-12 h-12 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-lg">4</span>
@@ -356,7 +349,7 @@ const Inicio = () => {
       </section>
 
       {/* Servicios destacados - Mejorado */}
-      <section className="py-32 bg-gradient-to-b from-white via-rose-50/30 to-lilac-50/30 relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-salmon-50/20 via-rose-50/30 to-lilac-50/30 relative overflow-hidden">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
@@ -374,7 +367,7 @@ const Inicio = () => {
             {/* Consulta Psicológica */}
             <div className="group relative flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-salmon-200/50 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
+              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white p-10 rounded-3xl shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -420,7 +413,7 @@ const Inicio = () => {
             {/* Talleres */}
             <div className="group relative flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-200/50 to-transparent rounded-3xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
-              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
+              <div className="relative bg-gradient-to-br from-white via-rose-50/20 to-white p-10 rounded-3xl shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -462,7 +455,7 @@ const Inicio = () => {
             {/* Club Hípic */}
             <div className="group relative flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-lilac-200/50 to-transparent rounded-3xl transform rotate-2 group-hover:rotate-3 transition-transform"></div>
-              <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
+              <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white p-10 rounded-3xl shadow-xl border border-lilac-100/50 hover:shadow-2xl transition-all hover:-translate-y-2 flex flex-col h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -513,7 +506,7 @@ const Inicio = () => {
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-salmon-200/30 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-rose-200/30 rounded-full blur-2xl"></div>
-            <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-16 shadow-2xl border border-white/50">
+            <div className="relative bg-gradient-to-br from-white/95 via-salmon-50/20 to-white/95 backdrop-blur-sm rounded-3xl p-16 shadow-2xl border border-salmon-100/30">
               <svg className="w-16 h-16 text-salmon-400 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.996 3.638-3.996 5.849v4.858h-5.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.997 3.638-3.997 5.849v4.858h-5.999z"/>
               </svg>
@@ -537,7 +530,7 @@ const Inicio = () => {
           <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-rose-200/30 rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-16 shadow-2xl border border-white/50">
+          <div className="bg-gradient-to-br from-white/95 via-rose-50/20 to-white/95 backdrop-blur-sm rounded-3xl p-16 shadow-2xl border border-rose-100/30">
             <div className="inline-block mb-8">
               <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-rose-500 rounded-3xl flex items-center justify-center mx-auto shadow-xl">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

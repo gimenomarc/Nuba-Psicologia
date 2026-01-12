@@ -4,7 +4,7 @@ const QuienSoy = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="py-32 bg-gradient-to-b from-white via-salmon-50/20 to-white relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-salmon-50/20 via-white to-rose-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
@@ -33,7 +33,7 @@ const QuienSoy = () => {
           </div>
           <div className="order-1 lg:order-2 relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/50 to-transparent rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform"></div>
-            <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100 h-full">
+            <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50 h-full">
               <h2 className="text-4xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
                 Núria Llurba
               </h2>
@@ -83,7 +83,7 @@ const QuienSoy = () => {
                   </div>
                 </div>
                 <div className="flex-1 ml-24 md:ml-0 md:mr-auto md:w-[45%]">
-                  <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                  <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-8 shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all">
                     <div className="inline-block px-4 py-2 bg-salmon-100 rounded-full mb-4">
                       <span className="text-sm font-semibold text-salmon-700">Psicologia Forense</span>
                     </div>
@@ -108,7 +108,7 @@ const QuienSoy = () => {
                   </div>
                 </div>
                 <div className="flex-1 ml-24 md:ml-auto md:w-[45%]">
-                  <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                  <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-8 shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all">
                     <div className="inline-block px-4 py-2 bg-rose-100 rounded-full mb-4">
                       <span className="text-sm font-semibold text-rose-700">Psicoteràpia</span>
                     </div>
@@ -133,7 +133,7 @@ const QuienSoy = () => {
                   </div>
                 </div>
                 <div className="flex-1 ml-24 md:ml-0 md:mr-auto md:w-[45%]">
-                  <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
+                  <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-8 shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all">
                     <div className="inline-block px-4 py-2 bg-lilac-100 rounded-full mb-4">
                       <span className="text-sm font-semibold text-lilac-700">Formació Continuada</span>
                     </div>
