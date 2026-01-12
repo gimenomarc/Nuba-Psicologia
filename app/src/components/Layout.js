@@ -19,9 +19,11 @@ const Layout = ({ children }) => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center group">
-              <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent group-hover:from-salmon-700 group-hover:to-rose-700 transition-all">
-                Núria Llurba
-              </div>
+              <img 
+                src="/images/icon banner.png" 
+                alt="Núria Llurba - Nuba Psicologia" 
+                className="h-12 md:h-14 object-contain transition-transform group-hover:scale-105"
+              />
             </Link>
 
             {/* Menú Desktop */}
