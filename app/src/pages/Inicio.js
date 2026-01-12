@@ -285,7 +285,7 @@ const Inicio = () => {
               Un procés senzill i transparent per començar el teu camí cap al benestar emocional
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
             {/* Línea conectora */}
             <div className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-salmon-200 via-rose-200 to-lilac-200"></div>
             
@@ -297,7 +297,7 @@ const Inicio = () => {
               </div>
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Contacte inicial</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Em contactes per telèfon o email per sol·licitar una consulta inicial
                 </p>
               </div>
@@ -311,7 +311,7 @@ const Inicio = () => {
               </div>
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Entrevista telefònica</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Parlem per telèfon per conèixer la teva demanda i valorar si sóc la professional adequada
                 </p>
               </div>
@@ -325,7 +325,7 @@ const Inicio = () => {
               </div>
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Primera sessió</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Acordem una data per a la primera sessió online i comencem el procés d'acompanyament
                 </p>
               </div>
@@ -338,9 +338,23 @@ const Inicio = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <h3 className="text-xl font-bold mb-4 text-gray-800">Acompanyament</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Treballem junts per assolir els teus objectius amb sessions adaptades a les teves necessitats
+                <h3 className="text-xl font-bold mb-4 text-gray-800">Procés terapèutic</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Desenvolupem el procés terapèutic o d'assessorament i acompanyament adaptat a les teves necessitats
+                </p>
+              </div>
+            </div>
+
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
+              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                <div className="w-12 h-12 bg-gradient-to-br from-lilac-500 to-rose-500 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="text-white font-bold text-lg">5</span>
+                </div>
+              </div>
+              <div className="mt-8">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">Seguiment</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Acompanyament continuat per assegurar el teu benestar i l'evolució del procés
                 </p>
               </div>
             </div>
