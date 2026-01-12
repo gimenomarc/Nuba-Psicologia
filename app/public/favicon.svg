@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B4D;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7E5FA3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Cerebro estilizado -->
+  <path d="M50 20 C35 20, 25 30, 25 45 C25 50, 28 55, 32 58 C30 62, 30 68, 35 72 C40 75, 45 75, 50 75 C55 75, 60 75, 65 72 C70 68, 70 62, 68 58 C72 55, 75 50, 75 45 C75 30, 65 20, 50 20 Z" fill="url(#grad)" opacity="0.9"/>
+  <!-- Corazón pequeño -->
+  <path d="M50 40 C48 38, 45 38, 43 40 C41 42, 40 45, 42 47 C43 48, 45 50, 50 53 C55 50, 57 48, 58 47 C60 45, 59 42, 57 40 C55 38, 52 38, 50 40 Z" fill="#FFFFFF" opacity="0.8"/>
+</svg>
