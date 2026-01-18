@@ -104,73 +104,33 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Nueva Sección: Por qué elegirme */}
-      <section className="py-24 lg:py-32 bg-gradient-to-b from-rose-50/30 via-white to-salmon-50/20 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 lg:mb-20">
-            <div className="inline-block mb-4 lg:mb-6">
-              <span className="text-xs lg:text-sm font-semibold text-rose-600 uppercase tracking-wider">Per què escollir-me</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 lg:mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
-              La meva experiència i compromís
-            </h2>
-            <p className="text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4 mb-8">
-              Experiència sòlida i formació contínua per oferir un acompanyament rigorós i actualitzat.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl mx-auto">
-            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group hover:-translate-y-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">4 anys d'experiència professional</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Trajectòria consolidada en psicologia forense, psicoteràpia i teràpia especialitzada.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group hover:-translate-y-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Psicologia forense</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Treball amb menors víctimes d'abús sexual a l'equip d'assessorament tècnic penal dels Jutjats de Barcelona.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group hover:-translate-y-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-rose-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Universitat de Barcelona</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Soc membre de l'equip terapèutic de la universitat i terapeuta especialitzada en teràpia sexual i de parella.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border border-rose-100/50 group hover:-translate-y-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Formació contínua</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Especialitzant-me en neuropsicologia i psicologia perinatal.
+      {/* Cita inspiradora - Movida después de Hero */}
+      <section className="py-24 lg:py-32 bg-gradient-to-br from-salmon-100/50 via-rose-100/50 to-lilac-100/50 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
+        </div>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="relative">
+            <div className="absolute -top-10 -left-10 w-32 h-32 bg-salmon-200/30 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-rose-200/30 rounded-full blur-2xl"></div>
+            <div className="relative bg-gradient-to-br from-white/95 via-salmon-50/20 to-white/95 backdrop-blur-sm rounded-3xl p-16 shadow-2xl border border-salmon-100/30">
+              <svg className="w-16 h-16 text-salmon-400 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.996 3.638-3.996 5.849v4.858h-5.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.997 3.638-3.997 5.849v4.858h-5.999z"/>
+              </svg>
+              <blockquote className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 leading-relaxed">
+                "Les dificultats d'una persona no es poden entendre aïlladament, 
+                sinó que s'han d'entendre dins del context de les seves relacions"
+              </blockquote>
+              <p className="text-xl text-gray-600 font-medium">
+                — Enfocament Sistèmic
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Valores y Enfoque - Mejorado */}
+      {/* Enfocament Sistèmic - Movido después de Hero */}
       <section className="py-24 lg:py-32 bg-gradient-to-b from-salmon-50/20 via-white to-lilac-50/20 relative">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 lg:mb-20">
             <div className="inline-block mb-4 lg:mb-6">
@@ -237,9 +197,83 @@ const Inicio = () => {
         </div>
       </section>
 
+      {/* Nueva Sección: Por qué elegirme */}
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-rose-50/30 via-white to-salmon-50/20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 lg:mb-20">
+            <div className="inline-block mb-4 lg:mb-6">
+              <span className="text-xs lg:text-sm font-semibold text-rose-600 uppercase tracking-wider">Per què escollir-me</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 lg:mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
+              La meva experiència i compromís
+            </h2>
+            <p className="text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4 mb-12">
+              Experiència sòlida i formació contínua per oferir un acompanyament rigorós i actualitzat.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-rose-100/30 hover:border-rose-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-50/50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">4 anys d'experiència professional</h3>
+                <p className="text-gray-600 leading-relaxed text-base">
+                  Trajectòria consolidada en psicologia forense, psicoteràpia i teràpia especialitzada.
+                </p>
+              </div>
+            </div>
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-rose-100/30 hover:border-rose-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-50/50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Psicologia forense</h3>
+                <p className="text-gray-600 leading-relaxed text-base">
+                  Treball amb menors víctimes d'abús sexual a l'equip d'assessorament tècnic penal dels Jutjats de Barcelona.
+                </p>
+              </div>
+            </div>
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-rose-100/30 hover:border-rose-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-50/50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Universitat de Barcelona</h3>
+                <p className="text-gray-600 leading-relaxed text-base">
+                  Soc membre de l'equip terapèutic de la universitat i terapeuta especialitzada en teràpia sexual i de parella.
+                </p>
+              </div>
+            </div>
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-rose-100/30 hover:border-rose-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-lilac-50/50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Formació contínua</h3>
+                <p className="text-gray-600 leading-relaxed text-base">
+                  Especialitzant-me en neuropsicologia i psicologia perinatal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Nueva Sección: Proceso de trabajo */}
       <section className="py-24 lg:py-32 bg-gradient-to-b from-lilac-50/20 via-white to-salmon-50/20 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-lilac-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 lg:mb-20">
             <div className="inline-block mb-4 lg:mb-6">
@@ -252,75 +286,82 @@ const Inicio = () => {
               Un procés clar i transparent, pensat per començar el teu camí cap al benestar emocional amb confiança.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4 relative max-w-6xl mx-auto">
-            {/* Línea conectora */}
-            <div className="hidden lg:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-salmon-200 via-rose-200 to-lilac-200"></div>
-            
-            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-6 lg:p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="w-12 h-12 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform border-4 border-white">
-                  <span className="text-white font-bold text-lg">1</span>
+          
+          {/* Primera fila - 3 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 max-w-7xl mx-auto">
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-lilac-100/30 hover:border-lilac-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-50/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold text-xl">1</span>
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800">Contacte inicial</h3>
                 </div>
-              </div>
-              <div className="mt-6 lg:mt-8">
-                <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4 text-gray-800">Contacte inicial</h3>
-                <p className="text-gray-600 leading-relaxed text-xs lg:text-sm">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Em pots contactar per telèfon, correu electrònic o a través del formulari per sol·licitar una entrevista telefònica.
                 </p>
               </div>
             </div>
 
-            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-6 lg:p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform border-4 border-white">
-                  <span className="text-white font-bold text-lg">2</span>
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-lilac-100/30 hover:border-lilac-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-50/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-rose-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold text-xl">2</span>
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800">Entrevista telefònica</h3>
                 </div>
-              </div>
-              <div className="mt-6 lg:mt-8">
-                <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4 text-gray-800">Entrevista telefònica</h3>
-                <p className="text-gray-600 leading-relaxed text-xs lg:text-sm">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Parlem per telèfon per conèixer millor la teva situació, explicar-te el meu enfocament i valorar si soc la professional adequada per acompanyar-te.
                 </p>
               </div>
             </div>
 
-            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-6 lg:p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="w-12 h-12 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform border-4 border-white">
-                  <span className="text-white font-bold text-lg">3</span>
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-lilac-100/30 hover:border-lilac-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-lilac-50/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold text-xl">3</span>
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800">Primera sessió</h3>
                 </div>
-              </div>
-              <div className="mt-6 lg:mt-8">
-                <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4 text-gray-800">Primera sessió</h3>
-                <p className="text-gray-600 leading-relaxed text-xs lg:text-sm">
+                <p className="text-gray-600 leading-relaxed text-base">
                   La primera sessió es centra en la teva història, què ha passat, què et preocupa i què vols aconseguir. Serveix per començar a entendre el context i establir objectius clars.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-6 lg:p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="w-12 h-12 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform border-4 border-white">
-                  <span className="text-white font-bold text-lg">4</span>
+          {/* Segunda fila - 2 cards centradas */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-lilac-100/30 hover:border-lilac-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-50/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-salmon-300 to-rose-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold text-xl">4</span>
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800">Procés terapèutic</h3>
                 </div>
-              </div>
-              <div className="mt-6 lg:mt-8">
-                <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4 text-gray-800">Procés terapèutic</h3>
-                <p className="text-gray-600 leading-relaxed text-xs lg:text-sm">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Cada procés és diferent. Algunes persones necessiten poques sessions, altres un recorregut més llarg. Treballem al teu ritme, respectant els teus temps, buscant que la teràpia sigui significativa i no s'allargui més del necessari.
                 </p>
               </div>
             </div>
 
-            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-6 lg:p-8 shadow-xl border border-lilac-100/50 text-center group hover:shadow-2xl transition-all md:col-span-2 lg:col-span-1">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="w-12 h-12 bg-gradient-to-br from-lilac-500 to-rose-500 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform border-4 border-white">
-                  <span className="text-white font-bold text-lg">5</span>
+            <div className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all border border-lilac-100/30 hover:border-lilac-200/50 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-lilac-50/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-lilac-500 to-rose-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold text-xl">5</span>
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800">Seguiment</h3>
                 </div>
-              </div>
-              <div className="mt-6 lg:mt-8">
-                <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4 text-gray-800">Seguiment</h3>
-                <p className="text-gray-600 leading-relaxed text-xs lg:text-sm">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Un cop acabada la teràpia, fem sessions de revisió per valorar els progressos, reforçar els canvis aconseguits i oferir suport perquè et sentis recolzat/da després del procés.
                 </p>
               </div>
@@ -341,58 +382,61 @@ const Inicio = () => {
               Serveis
             </h2>
           </div>
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg border border-salmon-100/50">
-              <h3 className="text-2xl font-bold mb-3 text-gray-800 flex items-center gap-3">
-                <span className="text-salmon-600">•</span>
-                Consulta psicològica
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Un espai de confiança i cura, adaptat a cada persona, parella o família, per parlar amb llibertat, trobar eines i afavorir canvis que promoguin el benestar emocional.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-2xl p-8 shadow-lg border border-rose-100/50">
-              <h3 className="text-2xl font-bold mb-3 text-gray-800 flex items-center gap-3">
-                <span className="text-rose-600">•</span>
-                Tallers de psicoeducació
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Espais vivencials i participatius que permeten aprendre, compartir i créixer en grup. Per a infants, adolescents i famílies.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-2xl p-8 shadow-lg border border-lilac-100/50">
-              <h3 className="text-2xl font-bold mb-3 text-gray-800 flex items-center gap-3">
-                <span className="text-lilac-600">•</span>
-                Club Hípic Julivert
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                En col·laboració amb el Club Hípic Julivert, ofereixo experiències terapèutiques i formatives amb cavalls que integren psicologia, vivència corporal i aprenentatge emocional en un entorn natural i segur.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <div className="max-w-4xl mx-auto relative">
+            {/* Línea vertical conectora - solo en desktop */}
+            <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-salmon-200 via-rose-200 to-lilac-200"></div>
+            
+            <div className="space-y-12 relative">
+              {/* Card 1 - Consulta psicològica */}
+              <div className="group relative pl-0 lg:pl-20">
+                <div className="absolute left-0 top-6 lg:top-8 hidden lg:flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg border-4 border-salmon-200 z-10">
+                  <div className="w-10 h-10 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="bg-white rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all border-l-4 border-salmon-500 group-hover:border-salmon-600 group-hover:-translate-x-2">
+                  <h3 className="text-3xl lg:text-4xl font-bold mb-5 text-gray-800">Consulta psicològica</h3>
+                  <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                    Un espai de confiança i cura, adaptat a cada persona, parella o família, per parlar amb llibertat, trobar eines i afavorir canvis que promoguin el benestar emocional.
+                  </p>
+                </div>
+              </div>
 
-      {/* Nueva Sección: Cita inspiradora */}
-      <section className="py-24 lg:py-32 bg-gradient-to-br from-salmon-100/50 via-rose-100/50 to-lilac-100/50 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
-        </div>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="relative">
-            <div className="absolute -top-10 -left-10 w-32 h-32 bg-salmon-200/30 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-rose-200/30 rounded-full blur-2xl"></div>
-            <div className="relative bg-gradient-to-br from-white/95 via-salmon-50/20 to-white/95 backdrop-blur-sm rounded-3xl p-16 shadow-2xl border border-salmon-100/30">
-              <svg className="w-16 h-16 text-salmon-400 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.996 3.638-3.996 5.849v4.858h-5.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.997 3.638-3.997 5.849v4.858h-5.999z"/>
-              </svg>
-              <blockquote className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 leading-relaxed">
-                "Les dificultats d'una persona no es poden entendre aïlladament, 
-                sinó que s'han d'entendre dins del context de les seves relacions"
-              </blockquote>
-              <p className="text-xl text-gray-600 font-medium">
-                — Enfocament Sistèmic
-              </p>
+              {/* Card 2 - Tallers de psicoeducació */}
+              <div className="group relative pl-0 lg:pl-20">
+                <div className="absolute left-0 top-6 lg:top-8 hidden lg:flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg border-4 border-rose-200 z-10">
+                  <div className="w-10 h-10 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="bg-white rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all border-l-4 border-rose-500 group-hover:border-rose-600 group-hover:-translate-x-2">
+                  <h3 className="text-3xl lg:text-4xl font-bold mb-5 text-gray-800">Tallers de psicoeducació</h3>
+                  <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                    Espais vivencials i participatius que permeten aprendre, compartir i créixer en grup. Per a infants, adolescents i famílies.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 - Club Hípic Julivert */}
+              <div className="group relative pl-0 lg:pl-20">
+                <div className="absolute left-0 top-6 lg:top-8 hidden lg:flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg border-4 border-lilac-200 z-10">
+                  <div className="w-10 h-10 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="bg-white rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all border-l-4 border-lilac-500 group-hover:border-lilac-600 group-hover:-translate-x-2">
+                  <h3 className="text-3xl lg:text-4xl font-bold mb-5 text-gray-800">Club Hípic Julivert</h3>
+                  <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                    En col·laboració amb el Club Hípic Julivert, ofereixo experiències terapèutiques i formatives amb cavalls que integren psicologia, vivència corporal i aprenentatge emocional en un entorn natural i segur.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
