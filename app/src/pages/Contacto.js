@@ -52,7 +52,7 @@ const Contacto = () => {
           <div className="inline-block mb-6">
             <span className="text-sm font-semibold text-salmon-600 uppercase tracking-wider">Contacte</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
             {t('nav.contacto')}
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
@@ -289,8 +289,8 @@ const Contacto = () => {
 
         {/* Información de contacto adicional */}
         <div className="mt-16 relative group">
-          <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-rose-100/30 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-          <div className="relative bg-gradient-to-br from-brown-50 via-rose-50 to-salmon-50 rounded-3xl p-12 shadow-2xl border border-white/50 text-center">
+          <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-rose-100/30 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
+          <div className="relative bg-gradient-to-br from-lilac-50 via-rose-50 to-salmon-50 rounded-3xl p-12 shadow-2xl border border-white/50 text-center">
             <h3 className="text-3xl font-extrabold mb-6 text-gray-800">
               O contacta directament
             </h3>

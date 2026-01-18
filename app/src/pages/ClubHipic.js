@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 const ClubHipic = () => {
 
   return (
-    <div className="py-32 bg-gradient-to-b from-brown-50/20 via-white to-salmon-50/20 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brown-200 to-transparent"></div>
+    <div className="py-32 bg-gradient-to-b from-lilac-50/20 via-white to-salmon-50/20 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-lilac-200 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
           <div className="inline-block mb-6">
-            <span className="text-sm font-semibold text-brown-600 uppercase tracking-wider">Club Hípic Julivert</span>
+            <span className="text-sm font-semibold text-lilac-600 uppercase tracking-wider">Club Hípic Julivert</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-brown-600 via-salmon-600 to-rose-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-lilac-600 via-salmon-600 to-rose-600 bg-clip-text text-transparent">
             Club Hípic Julivert
           </h1>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
@@ -22,7 +22,7 @@ const ClubHipic = () => {
           {/* Mindfulness con Caballos */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-brown-50/20 to-white rounded-3xl p-12 shadow-2xl border border-brown-100/50">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ const ClubHipic = () => {
           {/* Superar Pors y Traumes */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-brown-50/20 to-white rounded-3xl p-12 shadow-2xl border border-brown-100/50">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,10 +84,10 @@ const ClubHipic = () => {
 
           {/* Refuerzo Emocional */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-brown-50/20 to-white rounded-3xl p-12 shadow-2xl border border-brown-100/50">
+            <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-brown-400 to-brown-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -102,12 +102,12 @@ const ClubHipic = () => {
                   <p className="text-xl text-gray-700 leading-relaxed mb-6">
                     Permet experimentar lideratge, límits i autocontrol de manera vivencial i segura, observant com les nostres emocions i actituds afecten la interacció amb l'animal i amb els altres.
                   </p>
-                  <p className="text-xl text-gray-700 leading-relaxed mb-8 italic text-brown-600">
+                  <p className="text-xl text-gray-700 leading-relaxed mb-8 italic text-lilac-600">
                     Aprendre a confiar en tu mateix mentre confies en ell.
                   </p>
-                  <div className="bg-brown-50 rounded-2xl p-6 border-l-4 border-brown-500">
+                  <div className="bg-lilac-50 rounded-2xl p-6 border-l-4 border-lilac-500">
                     <p className="text-lg text-gray-700">
-                      <strong className="text-brown-700">Públic objectiu:</strong> Adolescents, adults i famílies que busquen millorar l'autoestima, la coherència interna i la regulació emocional.
+                      <strong className="text-lilac-700">Públic objectiu:</strong> Adolescents, adults i famílies que busquen millorar l'autoestima, la coherència interna i la regulació emocional.
                     </p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const ClubHipic = () => {
           {/* Team Building */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-brown-50/20 to-white rounded-3xl p-12 shadow-2xl border border-brown-100/50">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-salmon-300 to-salmon-500 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ const ClubHipic = () => {
           {/* Excursiones Escolares */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-brown-50/20 to-white rounded-3xl p-12 shadow-2xl border border-brown-100/50">
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,10 +183,10 @@ const ClubHipic = () => {
 
           {/* Hípic Clínic */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-brown-50/20 to-white rounded-3xl p-12 shadow-2xl border border-brown-100/50">
+            <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
+            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-brown-400 to-brown-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                   </svg>
@@ -201,12 +201,12 @@ const ClubHipic = () => {
                   <p className="text-xl text-gray-700 leading-relaxed mb-6">
                     Guiats per una genet professional i una psicòloga, els participants treballen habilitats de muntar, conduir i comunicar-se amb el cavall, mentre exploren recursos per mantenir la calma i el control en situacions de pressió. Cada sessió és intensa, vivencial i enfocada a potenciar el rendiment i el benestar, proporcionant eines tant tècniques com emocionals que es poden aplicar immediatament en la pràctica eqüestre.
                   </p>
-                  <p className="text-xl text-gray-700 leading-relaxed mb-8 italic text-brown-600">
+                  <p className="text-xl text-gray-700 leading-relaxed mb-8 italic text-lilac-600">
                     Aprendre/perfeccionar la tècnica, entrenar la ment.
                   </p>
-                  <div className="bg-brown-50 rounded-2xl p-6 border-l-4 border-brown-500">
+                  <div className="bg-lilac-50 rounded-2xl p-6 border-l-4 border-lilac-500">
                     <p className="text-lg text-gray-700">
-                      <strong className="text-brown-700">Públic objectiu:</strong> Genets, aficionats i professionals de l'equitació que volen millorar tècnica, confiança i gestió emocional en competicions o entrenaments.
+                      <strong className="text-lilac-700">Públic objectiu:</strong> Genets, aficionats i professionals de l'equitació que volen millorar tècnica, confiança i gestió emocional en competicions o entrenaments.
                     </p>
                   </div>
                 </div>
@@ -217,8 +217,8 @@ const ClubHipic = () => {
 
         {/* CTA Section */}
         <div className="relative mt-20">
-          <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-salmon-100/30 rounded-3xl transform rotate-1"></div>
-          <div className="relative bg-gradient-to-r from-brown-100 to-salmon-100 rounded-3xl p-16 text-center shadow-2xl border border-white/50">
+          <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-salmon-100/30 rounded-3xl transform rotate-1"></div>
+          <div className="relative bg-gradient-to-r from-lilac-100 to-salmon-100 rounded-3xl p-16 text-center shadow-2xl border border-white/50">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-800">
               Interessat en les nostres activitats?
             </h2>

@@ -45,27 +45,38 @@ const Layout = ({ children }) => {
                 onMouseEnter={() => setSobreMiOpen(true)}
                 onMouseLeave={() => setSobreMiOpen(false)}
               >
-                <button className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group flex items-center gap-1">
+                <button 
+                  onClick={() => setSobreMiOpen(!sobreMiOpen)}
+                  className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group flex items-center gap-1"
+                >
                   Sobre mi
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className={`w-4 h-4 transition-transform ${sobreMiOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
                 </button>
                 {sobreMiOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
-                    <Link
-                      to="/quien-soy"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
-                    >
-                      Qui soc
-                    </Link>
-                    <Link
-                      to="/como-trabajo"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
-                    >
-                      Com treballo
-                    </Link>
+                  <div 
+                    className="absolute top-full left-0 pt-2 w-48 z-50"
+                    onMouseEnter={() => setSobreMiOpen(true)}
+                    onMouseLeave={() => setSobreMiOpen(false)}
+                  >
+                    <div className="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                      <Link
+                        to="/quien-soy"
+                        onClick={() => setSobreMiOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors cursor-pointer"
+                      >
+                        Qui soc
+                      </Link>
+                      <Link
+                        to="/como-trabajo"
+                        onClick={() => setSobreMiOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors cursor-pointer"
+                      >
+                        Com treballo
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>
@@ -76,33 +87,45 @@ const Layout = ({ children }) => {
                 onMouseEnter={() => setServeisOpen(true)}
                 onMouseLeave={() => setServeisOpen(false)}
               >
-                <button className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group flex items-center gap-1">
+                <button 
+                  onClick={() => setServeisOpen(!serveisOpen)}
+                  className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group flex items-center gap-1"
+                >
                   Serveis
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className={`w-4 h-4 transition-transform ${serveisOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
                 </button>
                 {serveisOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
-                    <Link
-                      to="/servicios"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
-                    >
-                      Consulta
-                    </Link>
-                    <Link
-                      to="/servicios#talleres"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
-                    >
-                      Tallers
-                    </Link>
-                    <Link
-                      to="/club-hipic"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
-                    >
-                      Club Hípic Julivert
-                    </Link>
+                  <div 
+                    className="absolute top-full left-0 pt-2 w-56 z-50"
+                    onMouseEnter={() => setServeisOpen(true)}
+                    onMouseLeave={() => setServeisOpen(false)}
+                  >
+                    <div className="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                      <Link
+                        to="/servicios"
+                        onClick={() => setServeisOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors cursor-pointer"
+                      >
+                        Consulta
+                      </Link>
+                      <Link
+                        to="/servicios#talleres"
+                        onClick={() => setServeisOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors cursor-pointer"
+                      >
+                        Tallers
+                      </Link>
+                      <Link
+                        to="/club-hipic"
+                        onClick={() => setServeisOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors cursor-pointer"
+                      >
+                        Club Hípic Julivert
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>

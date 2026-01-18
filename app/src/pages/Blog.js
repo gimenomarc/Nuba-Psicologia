@@ -17,14 +17,14 @@ const Blog = () => {
   ];
 
   return (
-    <div className="py-32 bg-gradient-to-b from-rose-50/20 via-white to-brown-50/20 relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-rose-50/20 via-white to-lilac-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
             <span className="text-sm font-semibold text-rose-600 uppercase tracking-wider">Blog</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
             {t('blog.titulo')}
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">

@@ -75,7 +75,7 @@ const PoliticaPrivacidad = () => {
               Tienes derecho a acceder, rectificar, suprimir, oponerte al
               tratamiento, solicitar la portabilidad de tus datos y limitar el
               tratamiento. Para ejercer estos derechos, puedes contactar en:
-              nuriallurba@nubapsicologia.com
+              info@nubapsicologia.com
             </p>
           </section>
 
