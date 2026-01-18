@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [sobreMiOpen, setSobreMiOpen] = useState(false);
   const [serveisOpen, setServeisOpen] = useState(false);

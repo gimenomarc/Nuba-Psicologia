@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 const ClubHipic = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="py-32 bg-gradient-to-b from-brown-50/20 via-white to-salmon-50/20 relative overflow-hidden">
