@@ -11,7 +11,7 @@ const QuienSoy = () => {
           <div className="inline-block mb-6">
             <span className="text-sm font-semibold text-salmon-600 uppercase tracking-wider">Sobre mi</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
             {t('quienSoy.titulo')}
           </h1>
         </div>
@@ -34,7 +34,7 @@ const QuienSoy = () => {
           <div className="order-1 lg:order-2 relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/50 to-transparent rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50 h-full">
-              <h2 className="text-4xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
+              <h2 className="text-4xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
                 Núria Llurba
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-8">
@@ -58,7 +58,7 @@ const QuienSoy = () => {
             <div className="inline-block mb-6">
               <span className="text-sm font-semibold text-salmon-600 uppercase tracking-wider">La meva trajectòria</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
               Experiència Professional
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -69,7 +69,7 @@ const QuienSoy = () => {
           {/* Timeline */}
           <div className="relative">
             {/* Línea vertical del timeline */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-salmon-200 via-rose-200 to-lilac-200 transform md:-translate-x-1/2"></div>
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-salmon-200 via-rose-200 to-brown-200 transform md:-translate-x-1/2"></div>
 
             {/* Items del timeline */}
             <div className="space-y-16">
@@ -126,7 +126,7 @@ const QuienSoy = () => {
               {/* Item 3 */}
               <div className="relative flex items-start gap-8">
                 <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brown-400 to-brown-600 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
@@ -134,8 +134,8 @@ const QuienSoy = () => {
                 </div>
                 <div className="flex-1 ml-24 md:ml-0 md:mr-auto md:w-[45%]">
                   <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-8 shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all">
-                    <div className="inline-block px-4 py-2 bg-lilac-100 rounded-full mb-4">
-                      <span className="text-sm font-semibold text-lilac-700">Formació Continuada</span>
+                    <div className="inline-block px-4 py-2 bg-brown-100 rounded-full mb-4">
+                      <span className="text-sm font-semibold text-brown-700">Formació Continuada</span>
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-gray-800">Especialitzacions</h3>
                     <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -143,15 +143,15 @@ const QuienSoy = () => {
                     </p>
                     <ul className="space-y-2 text-gray-600">
                       <li className="flex items-start gap-2">
-                        <span className="text-lilac-500 mt-1">✓</span>
+                        <span className="text-brown-500 mt-1">✓</span>
                         <span>Teràpia sexual i de parella</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-lilac-500 mt-1">✓</span>
+                        <span className="text-brown-500 mt-1">✓</span>
                         <span>Psicologia perinatal</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-lilac-500 mt-1">✓</span>
+                        <span className="text-brown-500 mt-1">✓</span>
                         <span>Neuropsicologia (en curs)</span>
                       </li>
                     </ul>
@@ -164,10 +164,10 @@ const QuienSoy = () => {
 
         {/* Enfoque */}
         <div className="relative group mb-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-rose-100/30 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-          <div className="relative bg-gradient-to-br from-lilac-50 to-rose-50 rounded-3xl p-12 shadow-2xl border border-lilac-100">
+          <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-rose-100/30 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
+          <div className="relative bg-gradient-to-br from-brown-50 to-rose-50 rounded-3xl p-12 shadow-2xl border border-brown-100">
             <h3 className="text-4xl font-extrabold mb-8 text-gray-800 flex items-center gap-5">
-              <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center shadow-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-brown-400 to-brown-600 rounded-2xl flex items-center justify-center shadow-xl">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>

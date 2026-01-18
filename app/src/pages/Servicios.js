@@ -15,7 +15,7 @@ const Servicios = () => {
           <div className="inline-block mb-6">
             <span className="text-sm font-semibold text-salmon-600 uppercase tracking-wider">Els meus serveis</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
             {t('servicios.titulo')}
           </h1>
         </div>
@@ -43,7 +43,7 @@ const Servicios = () => {
               }}
               className={`px-8 py-4 rounded-full font-bold text-lg transition-all ${
                 activeCategory === 'talleres'
-                  ? 'bg-gradient-to-r from-rose-500 to-lilac-500 text-white shadow-xl scale-105'
+                  ? 'bg-gradient-to-r from-rose-500 to-brown-500 text-white shadow-xl scale-105'
                   : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
               }`}
             >
@@ -87,8 +87,8 @@ const Servicios = () => {
                   onClick={() => setActiveService('terapia-sexual')}
                   className={`px-6 py-3 rounded-full font-semibold transition-all ${
                     activeService === 'terapia-sexual'
-                      ? 'bg-gradient-to-r from-lilac-500 to-lilac-600 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-lilac-50 border-2 border-lilac-200'
+                      ? 'bg-gradient-to-r from-brown-500 to-brown-600 text-white shadow-lg'
+                      : 'bg-white text-gray-700 hover:bg-brown-50 border-2 border-brown-200'
                   }`}
                 >
                   Teràpia Sexual
@@ -121,7 +121,7 @@ const Servicios = () => {
           {activeCategory === 'talleres' && (
             <div className="mb-12">
               <div className="text-center mb-8">
-                <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-rose-600 to-lilac-600 bg-clip-text text-transparent">
+                <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-rose-600 to-brown-600 bg-clip-text text-transparent">
                   Tallers de Psicoeducació
                 </h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
@@ -148,8 +148,8 @@ const Servicios = () => {
                   onClick={() => setActiveService('talleres-familias')}
                   className={`px-6 py-3 rounded-full font-semibold transition-all ${
                     activeService === 'talleres-familias'
-                      ? 'bg-gradient-to-r from-lilac-500 to-lilac-600 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-lilac-50 border-2 border-lilac-200'
+                      ? 'bg-gradient-to-r from-brown-500 to-brown-600 text-white shadow-lg'
+                      : 'bg-white text-gray-700 hover:bg-brown-50 border-2 border-brown-200'
                   }`}
                 >
                   Per a Famílies
@@ -252,10 +252,10 @@ const Servicios = () => {
             {/* Terapia Sexual */}
             {activeService === 'terapia-sexual' && (
             <div id="terapia-sexual" className="relative group scroll-mt-24">
-              <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
               <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
                 <div className="flex items-start gap-8 mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
+                  <div className="w-20 h-20 bg-gradient-to-br from-brown-400 to-brown-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
@@ -276,15 +276,15 @@ const Servicios = () => {
                     <p className="text-xl text-gray-700 leading-relaxed mb-8">
                       La teràpia sexual pot ser individual o en parella. En el cas de les parelles, sovint el més difícil no és el que passa al llit, sinó el que no s'arriba a dir. Aquest espai permet parlar obertament de sexualitat, millorar la comunicació íntima i trobar formes més satisfactòries i respectuoses de viure-la junts. Potser és el moment de transformar el dubte en descobriment.
                     </p>
-                    <div className="bg-lilac-50 rounded-2xl p-6 border-l-4 border-lilac-500">
+                    <div className="bg-brown-50 rounded-2xl p-6 border-l-4 border-brown-500">
                       <p className="text-lg text-gray-700 mb-4">
-                        <strong className="text-lilac-700">A qui s'adreça:</strong> Aquest servei s'adreça a persones, parelles, vincles de qualsevol edat, identitat o orientació. La diversitat forma part de la sexualitat, i aquest és un espai on cada vivència és respectada.
+                        <strong className="text-brown-700">A qui s'adreça:</strong> Aquest servei s'adreça a persones, parelles, vincles de qualsevol edat, identitat o orientació. La diversitat forma part de la sexualitat, i aquest és un espai on cada vivència és respectada.
                       </p>
                       <div className="flex items-center justify-between">
                         <p className="text-lg text-gray-700">
-                          <strong className="text-lilac-700">Durada:</strong> Sessions d'una hora aproximadament.
+                          <strong className="text-brown-700">Durada:</strong> Sessions d'una hora aproximadament.
                         </p>
-                        <p className="text-3xl font-extrabold text-lilac-600">
+                        <p className="text-3xl font-extrabold text-brown-600">
                           70€ la sessió
                         </p>
                       </div>
@@ -485,7 +485,7 @@ const Servicios = () => {
 
               {/* Sexualidad - Parte 1 */}
               <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
-                <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-brown-400 to-brown-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -499,23 +499,23 @@ const Servicios = () => {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Parlem molt de sexualitat, però… què vol dir realment parlar-ne? És un tema de cos, o també de respecte, límits i emocions? Aquest taller proposa obrir un espai segur per pensar, sentir i parlar sense judicis. Per entendre que la sexualitat no és només desig, sinó també cura, respecte i llibertat compartida.
                 </p>
-                <div className="bg-lilac-50 rounded-xl p-6 border-l-4 border-lilac-500">
-                  <p className="font-semibold text-lilac-700 mb-3">Objectius:</p>
+                <div className="bg-brown-50 rounded-xl p-6 border-l-4 border-brown-500">
+                  <p className="font-semibold text-brown-700 mb-3">Objectius:</p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Fomentar una visió positiva, respectuosa i diversa de la sexualitat</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Reflexionar sobre els valors, els límits i el consentiment</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Desmuntar mites i estereotips presents en els models afectius i sexuals</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Promoure relacions basades en el respecte, la igualtat i la comunicació</span>
                     </li>
                   </ul>
@@ -527,7 +527,7 @@ const Servicios = () => {
 
               {/* Sexualidad - Parte 2 */}
               <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
-                <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-brown-400 to-brown-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -541,23 +541,23 @@ const Servicios = () => {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Quan parlem de salut sexual, sovint pensem només en riscos, normes i protecció. Però… i si la salut també fos plaer, curiositat i respecte? En aquest taller, a través d'una conversa clara i adaptada a cada edat, revisarem què sabem realment sobre les infeccions i malalties de transmissió sexual, com prevenir-les i com afrontar la desinformació que circula.
                 </p>
-                <div className="bg-lilac-50 rounded-xl p-6 border-l-4 border-lilac-500">
-                  <p className="font-semibold text-lilac-700 mb-3">Objectius:</p>
+                <div className="bg-brown-50 rounded-xl p-6 border-l-4 border-brown-500">
+                  <p className="font-semibold text-brown-700 mb-3">Objectius:</p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Promoure una visió positiva, respectuosa i responsable de la sexualitat</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Donar informació veraç i actualitzada sobre prevenció d'ITS, ETS i autocura</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Fomentar l'autoconeixement i la presa de decisions lliure de pressions</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Desmuntar mites, tabús i estereotips sobre la sexualitat i el plaer</span>
                     </li>
                   </ul>
@@ -651,7 +651,7 @@ const Servicios = () => {
               {/* Adolescencia */}
               <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-10 shadow-xl border border-salmon-100/50 hover:shadow-2xl transition-all lg:col-span-2">
                 <div className="flex items-start gap-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brown-400 to-brown-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
@@ -666,23 +666,23 @@ const Servicios = () => {
                     <p className="text-lg text-gray-700 leading-relaxed mb-6">
                       Aquest taller és un espai per aturar-se i mirar-se amb honestedat. Parlarem d'identitat, dels canvis que arriben sense permís i dels límits, els propis i els dels altres. Treballarem què vol dir créixer sense deixar de ser un mateix, i com conviure amb emocions que van i venen sense donar explicacions.
                     </p>
-                    <div className="bg-lilac-50 rounded-xl p-6 border-l-4 border-lilac-500">
-                      <p className="font-semibold text-lilac-700 mb-3">Objectius:</p>
+                    <div className="bg-brown-50 rounded-xl p-6 border-l-4 border-brown-500">
+                      <p className="font-semibold text-brown-700 mb-3">Objectius:</p>
                       <ul className="space-y-2 text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-lilac-500 mt-1">•</span>
+                          <span className="text-brown-500 mt-1">•</span>
                           <span>Acompanyar el procés d'identitat i autodescobriment propi de l'adolescència</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-lilac-500 mt-1">•</span>
+                          <span className="text-brown-500 mt-1">•</span>
                           <span>Reflexionar sobre els canvis físics, emocionals i socials d'aquesta etapa</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-lilac-500 mt-1">•</span>
+                          <span className="text-brown-500 mt-1">•</span>
                           <span>Treballar els límits personals i el respecte cap als dels altres</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-lilac-500 mt-1">•</span>
+                          <span className="text-brown-500 mt-1">•</span>
                           <span>Fomentar l'autoestima, la consciència emocional i la presa de decisions responsable</span>
                         </li>
                       </ul>
@@ -708,7 +708,7 @@ const Servicios = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Comunicar con adolescentes */}
               <div className="bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-10 shadow-xl border border-rose-100/50 hover:shadow-2xl transition-all">
-                <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-brown-400 to-brown-600 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
@@ -722,23 +722,23 @@ const Servicios = () => {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Aquest taller convida les famílies a mirar aquesta etapa no com una batalla, sinó com una transició compartida, un procés on l'autonomia i els límits poden conviure amb la tendresa.
                 </p>
-                <div className="bg-lilac-50 rounded-xl p-6 border-l-4 border-lilac-500">
-                  <p className="font-semibold text-lilac-700 mb-3">Objectius:</p>
+                <div className="bg-brown-50 rounded-xl p-6 border-l-4 border-brown-500">
+                  <p className="font-semibold text-brown-700 mb-3">Objectius:</p>
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Comprendre els principals canvis emocionals i conductuals de l'adolescència</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Aprendre estratègies de comunicació positiva amb els fills adolescents</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Reforçar el vincle familiar des del respecte i la confiança</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-lilac-500 mt-1">•</span>
+                      <span className="text-brown-500 mt-1">•</span>
                       <span>Oferir eines per gestionar límits i conflictes sense trencar el diàleg</span>
                     </li>
                   </ul>
@@ -838,7 +838,7 @@ const Servicios = () => {
         )}
 
         {/* Sección de Tarifas */}
-        <section className="bg-gradient-to-br from-salmon-50 via-rose-50 to-lilac-50 rounded-3xl p-16 shadow-2xl border border-white/50">
+        <section className="bg-gradient-to-br from-salmon-50 via-rose-50 to-brown-50 rounded-3xl p-16 shadow-2xl border border-white/50">
           <div className="text-center mb-12">
             <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
               Tarifes
@@ -868,7 +868,7 @@ const Servicios = () => {
             <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Acompanyament i Assessorament</h3>
               <div className="flex-grow flex flex-col justify-center">
-                <p className="text-4xl font-extrabold text-lilac-600 mb-2">50€</p>
+                <p className="text-4xl font-extrabold text-brown-600 mb-2">50€</p>
                 <p className="text-gray-600">la sessió</p>
               </div>
             </div>

@@ -6,6 +6,8 @@ import Footer from './Footer';
 const Layout = ({ children }) => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [sobreMiOpen, setSobreMiOpen] = useState(false);
+  const [serveisOpen, setServeisOpen] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -18,12 +20,13 @@ const Layout = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
+            <Link to="/" className="flex flex-col items-center group">
               <img 
-                src="/images/icon banner.png" 
-                alt="Núria Llurba - Nuba Psicologia" 
-                className="h-12 md:h-14 object-contain transition-transform group-hover:scale-105"
+                src="/images/icon.png" 
+                alt="NB" 
+                className="h-10 md:h-12 object-contain transition-transform group-hover:scale-105"
               />
+              <span className="text-sm md:text-base font-semibold text-gray-800 mt-1">Psicologia</span>
             </Link>
 
             {/* Menú Desktop */}
@@ -32,49 +35,90 @@ const Layout = ({ children }) => {
                 to="/"
                 className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group"
               >
-                {t('nav.inicio')}
+                Inici
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <Link
-                to="/quien-soy"
-                className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group"
+              
+              {/* Sobre mi - Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setSobreMiOpen(true)}
+                onMouseLeave={() => setSobreMiOpen(false)}
               >
-                {t('nav.quienSoy')}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link
-                to="/como-trabajo"
-                className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group"
+                <button className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group flex items-center gap-1">
+                  Sobre mi
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
+                </button>
+                {sobreMiOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                    <Link
+                      to="/quien-soy"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
+                    >
+                      Qui soc
+                    </Link>
+                    <Link
+                      to="/como-trabajo"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
+                    >
+                      Com treballo
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Serveis - Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setServeisOpen(true)}
+                onMouseLeave={() => setServeisOpen(false)}
               >
-                {t('nav.comoTrabajo')}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link
-                to="/servicios"
-                className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group"
-              >
-                {t('nav.servicios')}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link
-                to="/club-hipic"
-                className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group"
-              >
-                {t('nav.clubHipic')}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
-              </Link>
+                <button className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group flex items-center gap-1">
+                  Serveis
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
+                </button>
+                {serveisOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                    <Link
+                      to="/servicios"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
+                    >
+                      Consulta
+                    </Link>
+                    <Link
+                      to="/servicios#talleres"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
+                    >
+                      Tallers
+                    </Link>
+                    <Link
+                      to="/club-hipic"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-salmon-50 hover:text-salmon-600 transition-colors"
+                    >
+                      Club Hípic Julivert
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link
                 to="/blog"
                 className="text-gray-700 hover:text-salmon-600 transition-colors font-medium text-sm relative group"
               >
-                {t('nav.blog')}
+                Blog
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-salmon-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 to="/contacto"
                 className="bg-gradient-to-r from-salmon-500 to-rose-500 text-white px-6 py-2.5 rounded-full hover:from-salmon-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl font-semibold text-sm hover:scale-105"
               >
-                {t('nav.contacto')}
+                Contacte
               </Link>
               
               {/* Selector de idioma */}
@@ -140,49 +184,62 @@ const Layout = ({ children }) => {
                 className="block text-gray-700 hover:text-salmon-600"
                 onClick={() => setMenuOpen(false)}
               >
-                {t('nav.inicio')}
+                Inici
               </Link>
-              <Link
-                to="/quien-soy"
-                className="block text-gray-700 hover:text-salmon-600"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('nav.quienSoy')}
-              </Link>
-              <Link
-                to="/como-trabajo"
-                className="block text-gray-700 hover:text-salmon-600"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('nav.comoTrabajo')}
-              </Link>
-              <Link
-                to="/servicios"
-                className="block text-gray-700 hover:text-salmon-600"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('nav.servicios')}
-              </Link>
-              <Link
-                to="/club-hipic"
-                className="block text-gray-700 hover:text-salmon-600"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('nav.clubHipic')}
-              </Link>
+              <div className="space-y-2 pl-4">
+                <div className="text-gray-700 font-semibold text-sm mb-2">Sobre mi</div>
+                <Link
+                  to="/quien-soy"
+                  className="block text-gray-600 hover:text-salmon-600 text-sm"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  - Qui soc
+                </Link>
+                <Link
+                  to="/como-trabajo"
+                  className="block text-gray-600 hover:text-salmon-600 text-sm"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  - Com treballo
+                </Link>
+              </div>
+              <div className="space-y-2 pl-4">
+                <div className="text-gray-700 font-semibold text-sm mb-2">Serveis</div>
+                <Link
+                  to="/servicios"
+                  className="block text-gray-600 hover:text-salmon-600 text-sm"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  - Consulta
+                </Link>
+                <Link
+                  to="/servicios#talleres"
+                  className="block text-gray-600 hover:text-salmon-600 text-sm"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  - Tallers
+                </Link>
+                <Link
+                  to="/club-hipic"
+                  className="block text-gray-600 hover:text-salmon-600 text-sm"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  - Club Hípic Julivert
+                </Link>
+              </div>
               <Link
                 to="/blog"
                 className="block text-gray-700 hover:text-salmon-600"
                 onClick={() => setMenuOpen(false)}
               >
-                {t('nav.blog')}
+                Blog
               </Link>
               <Link
                 to="/contacto"
                 className="block bg-salmon-500 text-white px-4 py-2 rounded-lg text-center"
                 onClick={() => setMenuOpen(false)}
               >
-                {t('nav.contacto')}
+                Contacte
               </Link>
               <div className="flex items-center space-x-2 pt-4 border-t">
                 <button

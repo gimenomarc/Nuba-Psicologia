@@ -4,14 +4,14 @@ const ComoTrabajo = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="py-32 bg-gradient-to-b from-salmon-50/20 via-white to-lilac-50/20 relative overflow-hidden">
+    <div className="py-32 bg-gradient-to-b from-salmon-50/20 via-white to-brown-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-salmon-200 to-transparent"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
           <div className="inline-block mb-6">
             <span className="text-sm font-semibold text-salmon-600 uppercase tracking-wider">La meva metodologia</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-brown-600 bg-clip-text text-transparent">
             {t('comoTrabajo.titulo')}
           </h1>
         </div>
@@ -62,8 +62,8 @@ const ComoTrabajo = () => {
                     <h4 className="font-bold text-gray-800 mb-2">Des de casa</h4>
                     <p className="text-gray-600 text-sm">Des de qualsevol lloc còmode</p>
                   </div>
-                  <div className="bg-lilac-50 rounded-2xl p-6">
-                    <div className="w-12 h-12 bg-lilac-500 rounded-xl flex items-center justify-center mb-4">
+                  <div className="bg-brown-50 rounded-2xl p-6">
+                    <div className="w-12 h-12 bg-brown-500 rounded-xl flex items-center justify-center mb-4">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>
@@ -121,10 +121,10 @@ const ComoTrabajo = () => {
 
         {/* Filosofía */}
         <div className="relative group">
-          <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-rose-100/30 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-          <div className="relative bg-gradient-to-br from-lilac-50 to-rose-50 rounded-3xl p-12 shadow-2xl border border-lilac-100">
+          <div className="absolute inset-0 bg-gradient-to-br from-brown-100/30 to-rose-100/30 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
+          <div className="relative bg-gradient-to-br from-brown-50 to-rose-50 rounded-3xl p-12 shadow-2xl border border-brown-100">
             <div className="flex items-start mb-8">
-              <div className="bg-gradient-to-br from-lilac-400 to-lilac-600 text-white rounded-3xl p-6 mr-8 flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
+              <div className="bg-gradient-to-br from-brown-400 to-brown-600 text-white rounded-3xl p-6 mr-8 flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
                 <svg
                   className="w-10 h-10"
                   fill="none"

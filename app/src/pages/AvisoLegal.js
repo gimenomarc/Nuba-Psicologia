@@ -29,7 +29,7 @@ const AvisoLegal = () => {
                 <strong>Colegiada nº:</strong> 33667
               </li>
               <li>
-                <strong>Email:</strong> nuriallurba@nubapsicologia.com
+                <strong>Email:</strong> info@nubapsicologia.com
               </li>
               <li>
                 <strong>Dominio web:</strong> nubapsicologia.com

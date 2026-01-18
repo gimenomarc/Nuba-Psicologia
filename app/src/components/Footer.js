@@ -5,7 +5,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-gradient-to-br from-lilac-800 via-lilac-900 to-gray-900 text-white mt-auto">
+    <footer className="bg-gradient-to-br from-brown-800 via-brown-900 to-gray-900 text-white mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Información de contacto */}
@@ -13,20 +13,20 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-salmon-300 to-rose-300 bg-clip-text text-transparent">
               Núria Llurba Puig
             </h3>
-            <p className="text-lilac-200 mb-4 leading-relaxed">
+            <p className="text-brown-200 mb-4 leading-relaxed">
               Psicóloga colegiada nº 33667
             </p>
-            <p className="text-lilac-200 mb-4">
+            <p className="text-brown-200 mb-4">
               <span className="font-semibold">{t('footer.email')}:</span>{' '}
               <a
-                href="mailto:nuriallurba@nubapsicologia.com"
+                href="mailto:info@nubapsicologia.com"
                 className="hover:text-salmon-300 transition-colors underline decoration-2 underline-offset-2"
               >
-                nuriallurba@nubapsicologia.com
+                info@nubapsicologia.com
               </a>
             </p>
             <div className="mt-6">
-              <p className="text-lilac-200 mb-3 font-semibold">{t('footer.rrss')}:</p>
+              <p className="text-brown-200 mb-3 font-semibold">{t('footer.rrss')}:</p>
               <div className="flex space-x-4">
                 <a
                   href="https://www.instagram.com/nubapsicologia"
@@ -61,7 +61,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/politica-privacidad"
-                  className="text-lilac-200 hover:text-salmon-300 transition-colors inline-flex items-center gap-2 group"
+                  className="text-brown-200 hover:text-salmon-300 transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 bg-salmon-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('footer.privacidad')}
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/politica-cookies"
-                  className="text-lilac-200 hover:text-salmon-300 transition-colors inline-flex items-center gap-2 group"
+                  className="text-brown-200 hover:text-salmon-300 transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 bg-salmon-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('footer.cookies')}
@@ -79,7 +79,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/aviso-legal"
-                  className="text-lilac-200 hover:text-salmon-300 transition-colors inline-flex items-center gap-2 group"
+                  className="text-brown-200 hover:text-salmon-300 transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 bg-salmon-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('footer.avisoLegal')}
@@ -91,20 +91,20 @@ const Footer = () => {
           {/* Información adicional */}
           <div>
             <h3 className="text-2xl font-bold mb-6 text-white">Información</h3>
-            <p className="text-lilac-200 mb-3 leading-relaxed">
+            <p className="text-brown-200 mb-3 leading-relaxed">
               Psicóloga colegiada nº 33667
             </p>
-            <p className="text-lilac-200 leading-relaxed">
+            <p className="text-brown-200 leading-relaxed">
               Terapia sistémica adaptada a cada persona
             </p>
-            <p className="text-lilac-200 mt-4 leading-relaxed">
+            <p className="text-brown-200 mt-4 leading-relaxed">
               Modalidad online
             </p>
           </div>
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
-          <p className="text-lilac-300">{t('footer.derechos')}</p>
+          <p className="text-brown-300">{t('footer.derechos')}</p>
         </div>
       </div>
     </footer>

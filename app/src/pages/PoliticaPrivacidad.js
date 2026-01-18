@@ -24,7 +24,7 @@ const PoliticaPrivacidad = () => {
               <strong>Datos de contacto:</strong>
             </p>
             <ul className="list-disc pl-6">
-              <li>Email: nuriallurba@nubapsicologia.com</li>
+              <li>Email: info@nubapsicologia.com</li>
               <li>Colegiada nº: 33667</li>
             </ul>
           </section>
