@@ -102,9 +102,6 @@ const ComoTrabajo = () => {
                   {t('comoTrabajo.primerContacto.titulo')}
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  {t('comoTrabajo.primerContacto.texto')}
-                </p>
-                <p className="text-xl text-gray-700 leading-relaxed mb-6">
                   Abans de començar qualsevol procés, es realitza una entrevista telefònica inicial. 
                   Aquesta primera presa de contacte serveix per conèixer millor la demanda, valorar, 
                   per ambdues parts, si sóc la professional adequada per acompanyar el cas, explicar breument 
@@ -141,21 +138,20 @@ const ComoTrabajo = () => {
               </div>
               <div className="flex-1 pt-2">
                 <h2 className="text-4xl font-extrabold mb-6 text-gray-800">
-                  {t('comoTrabajo.filosofia.titulo')}
+                  Enfocament i filosofia
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  {t('comoTrabajo.filosofia.texto')}
-                </p>
-                <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  Un aspecte fonamental és que els objectius sempre els marca la persona o persones consultores. 
-                  Jo no imposo metes ni camins concrets, sinó que adapto l'acompanyament a les necessitats, 
-                  els ritmes i les prioritats de cadascú.
+                  El meu enfocament es sistèmic però incorporo eines d'altres corrents per poder
+                  oferir unes sessions més adaptades a cada persona i circumstància. Aquesta
+                  perspectiva m'ajuda a reflectir patrons, connexions, influències i recursos que sovint
+                  passen desapercebuts, i a intervenir de manera que es generin canvis reals i
+                  sostenibles.
                 </p>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Això garanteix que la intervenció sigui realment significativa per a qui la viu. 
-                  Totes les sessions es duen a terme sota un compromís absolut de confidencialitat, 
-                  garantint que la informació compartida queda protegida i que l'espai terapèutic 
-                  és segur i respectuós.
+                  Un aspecte fonamental és que els objectius sempre els marca la persona o persones
+                  consultores. Jo no imposo metes ni camins concrets, sinó que adapto
+                  l'acompanyament a les necessitats, els ritmes i les prioritats de cadascú. Això
+                  garanteix que la intervenció sigui realment significativa per a qui la viu.
                 </p>
               </div>
             </div>

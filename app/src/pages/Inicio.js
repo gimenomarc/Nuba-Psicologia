@@ -8,8 +8,19 @@ const Inicio = () => {
     <div className="relative">
       {/* Hero Section Mejorado */}
       <section className="relative overflow-hidden bg-gradient-to-br from-salmon-50 via-rose-50 to-lilac-50 py-32 md:py-48">
+        {/* Imagen de fondo visible */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/home.png" 
+            alt="Background" 
+            className="w-full h-full object-cover opacity-40"
+          />
+          {/* Overlay sutil para mantener legibilidad */}
+          <div className="absolute inset-0 bg-gradient-to-br from-salmon-50/60 via-rose-50/60 to-lilac-50/60"></div>
+        </div>
+        
         {/* Decorative elements mejorados */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden z-0">
           <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-salmon-200 rounded-full mix-blend-multiply filter blur-3xl opacity-25 animate-blob"></div>
           <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-25 animate-blob animation-delay-2000"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lilac-200 rounded-full mix-blend-multiply filter blur-3xl opacity-25 animate-blob animation-delay-4000"></div>
@@ -105,13 +116,11 @@ const Inicio = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
+                <span className="text-white font-extrabold text-3xl">4</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Experiència Comprovada</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">4 anys d'experiència professional</h3>
               <p className="text-base text-gray-600 leading-relaxed">
-                Més de 5 anys d'experiència en psicologia forense, psicoteràpia i teràpia especialitzada
+                Experiència en psicologia forense, psicoteràpia i teràpia especialitzada
               </p>
             </div>
             <div className="text-center group">
@@ -215,9 +224,9 @@ const Inicio = () => {
             <h2 className="text-5xl md:text-6xl font-extrabold mb-8 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
               Com treballo
             </h2>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              La teràpia sistèmica parteix de la idea que les dificultats d'una persona no es poden entendre aïlladament, 
-              sinó que s'han d'entendre dins del context de les seves relacions i dels sistemes en què participa.
+            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+              La teràpia sistèmica considera que les dificultats d'una persona no es poden
+              entendre soles, sinó que cal veure-les dins de les seves relacions i del seu entorn.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -229,10 +238,10 @@ const Inicio = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-6 text-gray-800">Enfocament Sistèmic</h3>
+                <h3 className="text-3xl font-bold mb-6 text-gray-800">Base sistèmica</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Veig patrons, connexions i influències que sovint passen desapercebuts, 
-                  per intervenir de manera que es generin canvis reals i sostenibles.
+                  Parteixo de la teràpia sistèmica però incorporo eines i
+                  tècniques d'altres corrents per adaptar-me als objectius de cada persona.
                 </p>
               </div>
             </div>
@@ -244,10 +253,11 @@ const Inicio = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-6 text-gray-800">Adaptat a Tu</h3>
+                <h3 className="text-3xl font-bold mb-6 text-gray-800">Generar canvi</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Incorporo eines d'altres corrents per oferir sessions més adaptades 
-                  a cada persona i circumstància. Els objectius sempre els marca qui consulta.
+                  La teràpia busca generar canvis reals i sostenibles, ajudant la
+                  persona a comprendre els seus patrons, identificar dificultats i descobrir
+                  recursos propis per aconseguir els seus objectius de manera significativa.
                 </p>
               </div>
             </div>
@@ -259,10 +269,10 @@ const Inicio = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-6 text-gray-800">Empatia i Rigor</h3>
+                <h3 className="text-3xl font-bold mb-6 text-gray-800">Respecte a cada vincle</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  La meva experiència en psicologia forense i psicoteràpia m'ha proporcionat les habilitats 
-                  necessàries per treballar amb delicadesa, empatia i rigor professional.
+                  Cada vincle és diferent; no jutgem ningú, sinó que
+                  oferim eines perquè les persones implicades aconsegueixin els seus objectius.
                 </p>
               </div>
             </div>
@@ -298,7 +308,7 @@ const Inicio = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Contacte inicial</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  Em contactes per telèfon o email per sol·licitar una consulta inicial
+                  En contactes per telèfon o email per sol·licitar una consulta inicial
                 </p>
               </div>
             </div>
@@ -326,7 +336,7 @@ const Inicio = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Primera sessió</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  Acordem una data per a la primera sessió online i comencem el procés d'acompanyament
+                  Registre una informació per a la primera sessió online i comencem el procés d'acompanyament
                 </p>
               </div>
             </div>
@@ -340,7 +350,7 @@ const Inicio = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Procés terapèutic</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  Desenvolupem el procés terapèutic o d'assessorament i acompanyament adaptat a les teves necessitats
+                  Desenvolupem el procés terapèutic o d'avaluació i acompanyament adaptat a les necessitats necessàries.
                 </p>
               </div>
             </div>
@@ -354,7 +364,7 @@ const Inicio = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Seguiment</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  Acompanyament continuat per assegurar el teu benestar i l'evolució del procés
+                  Acompanyament continu per assegurar el teu benestar i l'evolució del procés
                 </p>
               </div>
             </div>
@@ -558,18 +568,21 @@ const Inicio = () => {
             <p className="text-2xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed font-medium">
               Abans de començar qualsevol procés, realitzem una <strong className="text-salmon-600">entrevista telefònica inicial gratuïta</strong>.
             </p>
-            <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed">
               Aquesta primera presa de contacte serveix per conèixer-te millor, valorar si sóc la professional adequada 
               per acompanyar el teu cas, i acordar una data per a la primera sessió.
+            </p>
+            <p className="text-lg text-salmon-600 mb-12 max-w-3xl mx-auto leading-relaxed font-semibold">
+              📅 Reserva directament el teu dia i hora disponible des del calendari online
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <Link
                 to="/contacto"
                 className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-salmon-500 to-rose-500 text-white px-12 py-5 rounded-full font-bold hover:from-salmon-600 hover:to-rose-600 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 text-lg"
               >
-                {t('nav.contacto')}
+                Reservar Cita
                 <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </Link>
               <a

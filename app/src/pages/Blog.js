@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
   const { t } = useTranslation();
+  const [searchTerm, setSearchTerm] = useState('');
 
   // Ejemplo de artículos - en producción vendrían de una API o base de datos
   const articulos = [
@@ -12,9 +14,20 @@ const Blog = () => {
       resumen: 'Primer artículo del blog sobre psicología y bienestar...',
       fecha: '2025-01-12',
       imagen: 'https://via.placeholder.com/400x250',
+      palabrasClave: ['psicologia', 'benestar', 'terapia'],
     },
     // Se pueden agregar más artículos aquí
   ];
+
+  // Filtrar artículos según la búsqueda
+  const articulosFiltrados = articulos.filter(articulo => {
+    const termino = searchTerm.toLowerCase();
+    return (
+      articulo.titulo.toLowerCase().includes(termino) ||
+      articulo.resumen.toLowerCase().includes(termino) ||
+      articulo.palabrasClave.some(palabra => palabra.toLowerCase().includes(termino))
+    );
+  });
 
   return (
     <div className="py-32 bg-gradient-to-b from-rose-50/20 via-white to-lilac-50/20 relative overflow-hidden">
@@ -32,7 +45,45 @@ const Blog = () => {
           </p>
         </div>
 
-        {articulos.length === 0 ? (
+        {/* Buscador */}
+        <div className="mb-12 max-w-2xl mx-auto">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Cerca per paraules clau..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full px-6 py-4 pl-12 border-2 border-gray-200 rounded-full focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300 text-lg"
+            />
+            <svg
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Información sobre cómo subir contenido */}
+        <div className="mb-12 bg-gradient-to-br from-salmon-50 via-rose-50 to-lilac-50 rounded-3xl p-8 border border-salmon-100/50">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">Com puc pujar articles al blog?</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Per publicar articles al blog, pots:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li>Afegir els articles directament al codi font en el fitxer <code className="bg-white px-2 py-1 rounded">app/src/pages/Blog.js</code></li>
+            <li>Crear un fitxer JSON amb els articles i carregar-los dinàmicament</li>
+            <li>Integrar amb un CMS (Content Management System) com Contentful, Strapi o Sanity</li>
+            <li>Connectar amb una base de dades per gestionar els articles</li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed">
+            Cada article ha de tenir: <strong>títol</strong>, <strong>resum</strong>, <strong>data</strong>, <strong>imatge</strong> i <strong>paraules clau</strong> per al buscador.
+          </p>
+        </div>
+
+        {articulosFiltrados.length === 0 ? (
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl p-16 shadow-2xl border border-rose-100/50 text-center">
@@ -51,7 +102,7 @@ const Blog = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {articulos.map((articulo) => (
+            {articulosFiltrados.map((articulo) => (
               <article
                 key={articulo.id}
                 className="group relative flex flex-col"

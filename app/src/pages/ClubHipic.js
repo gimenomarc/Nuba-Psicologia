@@ -1,58 +1,153 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const ClubHipic = () => {
   const { t } = useTranslation();
+  const [activeService, setActiveService] = useState(null);
 
   return (
     <div className="py-32 bg-gradient-to-b from-lilac-50/20 via-white to-salmon-50/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-lilac-200 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-24">
+        <div className="text-center mb-16">
           <div className="inline-block mb-6">
-            <span className="text-sm font-semibold text-lilac-600 uppercase tracking-wider">Club Hípic Julivert</span>
+            <span className="text-sm font-semibold text-lilac-600 uppercase tracking-wider">Els meus serveis</span>
           </div>
           <h1 className="text-6xl md:text-7xl font-extrabold mb-8 bg-gradient-to-r from-lilac-600 via-salmon-600 to-rose-600 bg-clip-text text-transparent">
             Club Hípic Julivert
           </h1>
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+            El Club Hípic Julivert és un espai situat a Vinyols i els Arcs, envoltat de natura i
+            pensat perquè tant les persones com els cavalls hi puguin estar amb calma i respecte.
+            És un entorn tranquil, allunyat de la pressa, on els cavalls viuen en règim de
+            semillibertat, fet que afavoreix el seu benestar i permet establir vincles més autèntics i
+            segurs.
+          </p>
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+            Aquest projecte neix de la col·laboració amb la Yasmina, experta en etologia equina,
+            genet i professora d'hípica. La seva mirada està profundament centrada en el respecte
+            al cavall, la comprensió del seu comportament i la construcció d'una relació basada en
+            la confiança i la comunicació.
+          </p>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Activitats que combinen psicologia i cavalls per al benestar emocional i el creixement personal.
+            La unió entre la psicologia i el món del cavall fa possible un acompanyament cuidat,
+            coherent i respectuós, on l'entorn, els animals i les persones formen part d'un mateix
+            procés. Treballem des d'una mirada compartida que posa al centre el vincle, la
+            presència i el benestar, creant un espai segur per a l'exploració emocional i personal.
           </p>
         </div>
 
-        <div className="space-y-16 mb-20">
-          {/* Mindfulness con Caballos */}
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-            <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
-              <div className="flex items-start gap-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-4xl font-extrabold mb-6 text-gray-800">
-                    Mindfulness amb Cavalls
-                  </h3>
-                  <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                    T'has aturat mai a notar què passa dins teu mentre observes un cavall? El mindfulness amb cavalls és una pràctica que combina atenció plena i connexió amb l'animal. Mitjançant exercicis de respiració, observació i interacció respectuosa amb el cavall, els participants aprenen a estar presents, reconèixer les seves emocions i desenvolupar una major coherència interna.
-                  </p>
-                  <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                    És una experiència tranquil·la, enriquidora i reflexiva, que convida a portar aquesta presència a la vida quotidiana. Estar present, sentir, connectar: aquí i ara amb cada pas.
-                  </p>
-                  <div className="bg-salmon-50 rounded-2xl p-6 border-l-4 border-salmon-500">
-                    <p className="text-lg text-gray-700">
-                      <strong className="text-salmon-700">Públic objectiu:</strong> Adults que volen aprendre a gestionar l'estrès i les emocions, millorar la concentració i la consciència corporal.
+        {/* Selector de servicios */}
+        <div className="mb-12">
+          <div className="flex flex-wrap justify-center gap-4">
+            <button
+              onClick={() => setActiveService('mindfulness')}
+              className={`px-6 py-3 rounded-full font-semibold transition-all text-sm ${
+                activeService === 'mindfulness'
+                  ? 'bg-gradient-to-r from-salmon-500 to-salmon-600 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-salmon-50 border-2 border-salmon-200'
+              }`}
+            >
+              Mindfulness amb Cavalls
+            </button>
+            <button
+              onClick={() => setActiveService('pors')}
+              className={`px-6 py-3 rounded-full font-semibold transition-all text-sm ${
+                activeService === 'pors'
+                  ? 'bg-gradient-to-r from-rose-500 to-rose-600 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-rose-50 border-2 border-rose-200'
+              }`}
+            >
+              Superar Pors i Traumes
+            </button>
+            <button
+              onClick={() => setActiveService('refuerzo')}
+              className={`px-6 py-3 rounded-full font-semibold transition-all text-sm ${
+                activeService === 'refuerzo'
+                  ? 'bg-gradient-to-r from-lilac-500 to-lilac-600 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-lilac-50 border-2 border-lilac-200'
+              }`}
+            >
+              Reforç Emocional
+            </button>
+            <button
+              onClick={() => setActiveService('teambuilding')}
+              className={`px-6 py-3 rounded-full font-semibold transition-all text-sm ${
+                activeService === 'teambuilding'
+                  ? 'bg-gradient-to-r from-salmon-400 to-salmon-500 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-salmon-50 border-2 border-salmon-200'
+              }`}
+            >
+              Team Building
+            </button>
+            <button
+              onClick={() => setActiveService('escolares')}
+              className={`px-6 py-3 rounded-full font-semibold transition-all text-sm ${
+                activeService === 'escolares'
+                  ? 'bg-gradient-to-r from-rose-400 to-rose-500 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-rose-50 border-2 border-rose-200'
+              }`}
+            >
+              Excursions Escolars
+            </button>
+            <button
+              onClick={() => setActiveService('clinic')}
+              className={`px-6 py-3 rounded-full font-semibold transition-all text-sm ${
+                activeService === 'clinic'
+                  ? 'bg-gradient-to-r from-lilac-400 to-lilac-500 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-lilac-50 border-2 border-lilac-200'
+              }`}
+            >
+              Hípic Clínic
+            </button>
+          </div>
+        </div>
+
+        {/* Contenido de servicios - Solo se muestra si hay un servicio seleccionado */}
+        {activeService && (
+        <section className="mb-32">
+          <div className="space-y-16">
+            {/* Mindfulness con Caballos */}
+            {activeService === 'mindfulness' && (
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
+              <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
+                <div className="flex items-start gap-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-salmon-400 to-salmon-600 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-4xl font-extrabold mb-6 text-gray-800">
+                      Mindfulness amb Cavalls
+                    </h3>
+                    <p className="text-xl text-gray-700 leading-relaxed mb-6">
+                      T'has aturat mai a notar què passa dins teu mentre observes un cavall? El mindfulness amb cavalls és una pràctica que combina atenció plena i connexió amb l'animal. Mitjançant exercicis de respiració, observació i interacció respectuosa amb el cavall, els participants aprenen a estar presents, reconèixer les seves emocions i desenvolupar una major coherència interna.
                     </p>
+                    <p className="text-xl text-gray-700 leading-relaxed mb-8">
+                      És una experiència tranquil·la, enriquidora i reflexiva, que convida a portar aquesta presència a la vida quotidiana.
+                    </p>
+                    <div className="text-center my-8">
+                      <p className="text-2xl md:text-3xl font-bold text-gray-800 italic">
+                        "Estar present, sentir, connectar: aquí i ara amb cada pas"
+                      </p>
+                    </div>
+                    <div className="bg-salmon-50 rounded-2xl p-6 border-l-4 border-salmon-500">
+                      <p className="text-lg text-gray-700">
+                        <strong className="text-salmon-700">Públic objectiu:</strong> Adults que volen aprendre a gestionar l'estrès i les emocions, millorar la concentració i la consciència corporal.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            )}
 
-          {/* Superar Pors y Traumes */}
-          <div className="relative group">
+            {/* Superar Pors y Traumes */}
+            {activeService === 'pors' && (
+            <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
@@ -82,10 +177,11 @@ const ClubHipic = () => {
                 </div>
               </div>
             </div>
-          </div>
+            )}
 
-          {/* Refuerzo Emocional */}
-          <div className="relative group">
+            {/* Refuerzo Emocional */}
+            {activeService === 'refuerzo' && (
+            <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
@@ -115,10 +211,11 @@ const ClubHipic = () => {
                 </div>
               </div>
             </div>
-          </div>
+            )}
 
-          {/* Team Building */}
-          <div className="relative group">
+            {/* Team Building */}
+            {activeService === 'teambuilding' && (
+            <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
@@ -148,10 +245,11 @@ const ClubHipic = () => {
                 </div>
               </div>
             </div>
-          </div>
+            )}
 
-          {/* Excursiones Escolares */}
-          <div className="relative group">
+            {/* Excursiones Escolares */}
+            {activeService === 'escolares' && (
+            <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-rose-100/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
@@ -181,10 +279,11 @@ const ClubHipic = () => {
                 </div>
               </div>
             </div>
-          </div>
+            )}
 
-          {/* Hípic Clínic */}
-          <div className="relative group">
+            {/* Hípic Clínic */}
+            {activeService === 'clinic' && (
+            <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
             <div className="relative bg-gradient-to-br from-white via-lilac-50/20 to-white rounded-3xl p-12 shadow-2xl border border-lilac-100/50">
               <div className="flex items-start gap-8">
@@ -214,8 +313,10 @@ const ClubHipic = () => {
                 </div>
               </div>
             </div>
+            )}
           </div>
-        </div>
+        </section>
+        )}
 
         {/* CTA Section */}
         <div className="relative mt-20">

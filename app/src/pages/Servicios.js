@@ -20,7 +20,7 @@ const Servicios = () => {
           </h1>
         </div>
 
-        {/* Selector principal: Consulta o Talleres */}
+        {/* Selector principal: Consulta o Club Hípic */}
         <div className="mb-16">
           <div className="flex justify-center gap-4 mb-12">
             <button
@@ -34,8 +34,14 @@ const Servicios = () => {
                   : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
               }`}
             >
-              Consulta
+              Consulta serveis
             </button>
+            <Link
+              to="/club-hipic"
+              className="px-8 py-4 rounded-full font-bold text-lg transition-all bg-white text-gray-700 hover:bg-gray-50 shadow-md hover:shadow-lg"
+            >
+              Club Hípic Julivert
+            </Link>
             <button
               onClick={() => {
                 setActiveCategory('talleres');
@@ -58,9 +64,6 @@ const Servicios = () => {
                 <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
                   Serveis de consulta i acompanyament psicològic
                 </h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Selecciona un servei per veure més informació
-                </p>
               </div>
               <div className="flex flex-wrap justify-center gap-4">
                 <button
@@ -92,16 +95,6 @@ const Servicios = () => {
                   }`}
                 >
                   Teràpia Sexual
-                </button>
-                <button
-                  onClick={() => setActiveService('psicologia-perinatal')}
-                  className={`px-6 py-3 rounded-full font-semibold transition-all ${
-                    activeService === 'psicologia-perinatal'
-                      ? 'bg-gradient-to-r from-salmon-400 to-salmon-500 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-salmon-50 border-2 border-salmon-200'
-                  }`}
-                >
-                  Psicologia Perinatal
                 </button>
                 <button
                   onClick={() => setActiveService('asesoramiento')}
@@ -185,20 +178,29 @@ const Servicios = () => {
                       La teràpia de parella és un espai per posar llum al que passa, entendre què s'ha anat trencant i trobar noves maneres de comunicar-se i de reconnectar. Treballem per identificar què manté els conflictes actius i com transformar aquestes dinàmiques perquè la relació sigui el lloc on els seus integrants volen estar.
                     </p>
                     <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                      Cada procés és únic. Per exemple, hi ha parelles que volen retrobar-se i d'altres que busquen tancar una etapa de manera conscient i respectuosa. En tots els casos, la teràpia ofereix una guia per comprendre, decidir i avançar cap a la relació que es vol tenir. No té perquè ser el final, sinó una crida a fer-ho diferent.
+                      Cada procés és únic. Per exemple, hi ha parelles que volen retrobar-se i d'altres que busquen tancar una etapa de manera conscient i respectuosa. En tots els casos, la teràpia ofereix una guia per comprendre, decidir i avançar cap a la relació que es vol tenir.
                     </p>
+                    <div className="text-center my-8">
+                      <p className="text-2xl md:text-3xl font-bold text-gray-800 italic">
+                        "No té perquè ser el final, sinó una crida a fer-ho diferent"
+                      </p>
+                    </div>
                     <div className="bg-salmon-50 rounded-2xl p-6 border-l-4 border-salmon-500">
                       <p className="text-lg text-gray-700 mb-4">
                         <strong className="text-salmon-700">A qui s'adreça:</strong> A parelles de qualsevol edat, orientació o tipus de relació que vulguin millorar la seva comunicació, resoldre conflictes, o revisar el seu vincle amb l'acompanyament d'un professional.
                       </p>
-                      <div className="flex items-center justify-between">
-                        <p className="text-lg text-gray-700">
-                          <strong className="text-salmon-700">Durada:</strong> Sessions d'una hora aproximadament.
-                        </p>
-                        <p className="text-3xl font-extrabold text-salmon-600">
-                          70€ la sessió
-                        </p>
-                      </div>
+                      <p className="text-lg text-gray-700 mb-6">
+                        <strong className="text-salmon-700">Durada:</strong> Sessions d'una hora aproximadament.
+                      </p>
+                      <Link
+                        to="/contacto"
+                        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-salmon-500 to-rose-500 text-white px-8 py-3 rounded-full font-bold hover:from-salmon-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl"
+                      >
+                        Demanar cita
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -228,20 +230,29 @@ const Servicios = () => {
                       Les famílies canvien, evolucionen i es reorganitzen constantment. El que un dia va servir per sostenir el grup, amb el temps pot començar a generar tensió, incomprensió o distància. La teràpia familiar ofereix un espai per observar aquestes dinàmiques, entendre com s'han construït i decidir com es poden transformar.
                     </p>
                     <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                      No es tracta de buscar responsables, sinó de donar veu a totes les parts i posar paraules al que sovint queda silenciat. El treball terapèutic permet identificar patrons que es repeteixen, revisar rols i crear noves formes de comunicació que afavoreixin una convivència més clara i respectuosa. No es tracta de tornar enrere, sinó de trobar una nova manera d'estar junts.
+                      No es tracta de buscar responsables, sinó de donar veu a totes les parts i posar paraules al que sovint queda silenciat. El treball terapèutic permet identificar patrons que es repeteixen, revisar rols i crear noves formes de comunicació que afavoreixin una convivència més clara i respectuosa.
                     </p>
+                    <div className="text-center my-8">
+                      <p className="text-2xl md:text-3xl font-bold text-gray-800 italic">
+                        "No es tracta de tornar enrere, sinó de trobar una nova manera d'estar junts"
+                      </p>
+                    </div>
                     <div className="bg-rose-50 rounded-2xl p-6 border-l-4 border-rose-500">
                       <p className="text-lg text-gray-700 mb-4">
                         <strong className="text-rose-700">A qui s'adreça:</strong> A famílies que senten que la manera com estan convivint o relacionant-se ja no funciona com voldrien. A famílies que volen entendre què està passant entre els seus membres, posar paraules al que passa i trobar noves formes d'estar junts. No importa la composició ni el moment vital, l'important és la voluntat de revisar i obrir espais de canvi.
                       </p>
-                      <div className="flex items-center justify-between">
-                        <p className="text-lg text-gray-700">
-                          <strong className="text-rose-700">Durada:</strong> Sessions d'una hora aproximadament.
-                        </p>
-                        <p className="text-3xl font-extrabold text-rose-600">
-                          70€ la sessió
-                        </p>
-                      </div>
+                      <p className="text-lg text-gray-700 mb-6">
+                        <strong className="text-rose-700">Durada:</strong> Sessions d'una hora aproximadament.
+                      </p>
+                      <Link
+                        to="/contacto"
+                        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-rose-500 to-lilac-500 text-white px-8 py-3 rounded-full font-bold hover:from-rose-600 hover:to-lilac-600 transition-all shadow-lg hover:shadow-xl"
+                      >
+                        Demanar cita
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -274,20 +285,29 @@ const Servicios = () => {
                       En aquest espai es treballen tant les dificultats sexuals que generen malestar com el desig de comprendre's millor i viure la sexualitat amb més llibertat. Es posen paraules a allò que costa expressar, s'identifiquen bloquejos, creences o pors, i es construeixen noves maneres de relacionar-se amb el propi cos, el plaer i la intimitat.
                     </p>
                     <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                      La teràpia sexual pot ser individual o en parella. En el cas de les parelles, sovint el més difícil no és el que passa al llit, sinó el que no s'arriba a dir. Aquest espai permet parlar obertament de sexualitat, millorar la comunicació íntima i trobar formes més satisfactòries i respectuoses de viure-la junts. Potser és el moment de transformar el dubte en descobriment.
+                      La teràpia sexual pot ser individual o en parella. En el cas de les parelles, sovint el més difícil no és el que passa al llit, sinó el que no s'arriba a dir. Aquest espai permet parlar obertament de sexualitat, millorar la comunicació íntima i trobar formes més satisfactòries i respectuoses de viure-la junts.
                     </p>
+                    <div className="text-center my-8">
+                      <p className="text-2xl md:text-3xl font-bold text-gray-800 italic">
+                        "Potser és el moment de transformar el dubte en descobriment"
+                      </p>
+                    </div>
                     <div className="bg-lilac-50 rounded-2xl p-6 border-l-4 border-lilac-500">
                       <p className="text-lg text-gray-700 mb-4">
                         <strong className="text-lilac-700">A qui s'adreça:</strong> Aquest servei s'adreça a persones, parelles, vincles de qualsevol edat, identitat o orientació. La diversitat forma part de la sexualitat, i aquest és un espai on cada vivència és respectada.
                       </p>
-                      <div className="flex items-center justify-between">
-                        <p className="text-lg text-gray-700">
-                          <strong className="text-lilac-700">Durada:</strong> Sessions d'una hora aproximadament.
-                        </p>
-                        <p className="text-3xl font-extrabold text-lilac-600">
-                          70€ la sessió
-                        </p>
-                      </div>
+                      <p className="text-lg text-gray-700 mb-6">
+                        <strong className="text-lilac-700">Durada:</strong> Sessions d'una hora aproximadament.
+                      </p>
+                      <Link
+                        to="/contacto"
+                        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lilac-500 to-rose-500 text-white px-8 py-3 rounded-full font-bold hover:from-lilac-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl"
+                      >
+                        Demanar cita
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -295,51 +315,6 @@ const Servicios = () => {
             </div>
             )}
 
-            {/* Psicología Perinatal */}
-            {activeService === 'psicologia-perinatal' && (
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-salmon-100/30 to-transparent rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-              <div className="relative bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-3xl p-12 shadow-2xl border border-salmon-100/50">
-                <div className="flex items-start gap-8 mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-salmon-300 to-salmon-500 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-4xl font-extrabold mb-6 text-gray-800">
-                      Psicologia Perinatal
-                    </h3>
-                    <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                      Com ens preparem emocionalment per a una nova vida, quan la biologia, les emocions i els canvis vitals es barregen en un mateix espai? Com podem sentir-nos segurs i recolzats quan tot està en constant moviment i el que sentim és intens, desconegut o confús?
-                    </p>
-                    <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                      La psicologia perinatal és l'acompanyament professional de mares, pares i famílies durant tot el període que envolta l'embaràs, la criança inicial i els processos reproductius. No només es tracta de comprendre el que passa en el cos, sinó també de donar eines per gestionar les emocions, el vincle amb el nadó i les relacions familiars. És un espai per parlar, entendre i construir recursos que afavoreixin el benestar emocional durant moments de canvi, alegria, incertesa o dificultat.
-                    </p>
-                    <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                      Els processos de reproducció assistida poden ser especialment intensos, tractaments mèdics, proves, esperes, repeticions d'intents i canvis hormonals que afecten l'estat d'ànim. Sovint la persona o la parella es sent sola, aclaparada o insegura. El recolzament psicològic ofereix un espai on expressar pors i dubtes, gestionar l'ansietat, cuidar-se i sostenir l'equilibri emocional, així com eines per comunicar-se amb la parella i l'entorn.
-                    </p>
-                    <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                      El dol gestacional i neonatal és una experiència profunda i sovint silenciada, que genera tristesa, ràbia, culpa i desconcert, entre moltes altres emocions. Comptar amb un espai segur i respectuós on sentir-se escoltat i acompanyat permet posar paraules al dolor, compartir records i construir un nou equilibri emocional. El camí que ve és més ferm quan tens suport al teu costat.
-                    </p>
-                    <div className="bg-salmon-50 rounded-2xl p-6 border-l-4 border-salmon-500">
-                      <p className="text-lg text-gray-700 mb-4">
-                        <strong className="text-salmon-700">A qui s'adreça:</strong> Aquest servei està pensat per a qualsevol persona, parella o família que estigui vivint un procés perinatal, ja sigui de reproducció assistida, gestació, inici de criança o dol.
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <p className="text-lg text-gray-700">
-                          <strong className="text-salmon-700">Durada:</strong> Sessions d'una hora aproximadament.
-                        </p>
-                        <p className="text-3xl font-extrabold text-salmon-600">
-                          70€ la sessió
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            )}
 
             {/* Asesoramiento */}
             {activeService === 'asesoramiento' && (
@@ -363,20 +338,29 @@ const Servicios = () => {
                       L'assessorament i l'acompanyament psicològic és un lloc on parlar obertament de les pròpies dificultats, descobrir noves perspectives i experimentar estratègies que ajudin a sentir-se més equilibrat i segur. No és només per moments crítics: és també un espai per créixer personalment, conèixer millor els propis recursos i aprendre a gestionar els alts i baixos de la vida amb més serenitat.
                     </p>
                     <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                      En aquestes sessions, es treballen emocions com l'ansietat, l'estrès, la tristesa o la inseguretat, així com situacions que generen conflicte intern o dificulten prendre decisions importants. Amb diàleg i exercicis pràctics, cada persona pot descobrir què funciona per a ella, sense presses, sense judicis i amb suport professional. No hi ha solucions màgiques, sinó un espai per entendre, explorar i transformar.
+                      En aquestes sessions, es treballen emocions com l'ansietat, l'estrès, la tristesa o la inseguretat, així com situacions que generen conflicte intern o dificulten prendre decisions importants. Amb diàleg i exercicis pràctics, cada persona pot descobrir què funciona per a ella, sense presses, sense judicis i amb suport professional.
                     </p>
+                    <div className="text-center my-8">
+                      <p className="text-2xl md:text-3xl font-bold text-gray-800 italic">
+                        "No hi ha solucions màgiques, sinó un espai per entendre, explorar i transformar"
+                      </p>
+                    </div>
                     <div className="bg-rose-50 rounded-2xl p-6 border-l-4 border-rose-500">
                       <p className="text-lg text-gray-700 mb-4">
                         <strong className="text-rose-700">A qui s'adreça:</strong> Aquest servei està pensat per a adolescents i adults que volen sentir-se recolzats, comprendre millor les pròpies reaccions i construir eines que permetin afrontar els reptes del dia a dia amb més confiança i claredat.
                       </p>
-                      <div className="flex items-center justify-between">
-                        <p className="text-lg text-gray-700">
-                          <strong className="text-rose-700">Durada:</strong> Sessions d'una hora aproximadament.
-                        </p>
-                        <p className="text-3xl font-extrabold text-rose-600">
-                          50€ la sessió
-                        </p>
-                      </div>
+                      <p className="text-lg text-gray-700 mb-6">
+                        <strong className="text-rose-700">Durada:</strong> Sessions d'una hora aproximadament.
+                      </p>
+                      <Link
+                        to="/contacto"
+                        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-rose-500 to-salmon-500 text-white px-8 py-3 rounded-full font-bold hover:from-rose-600 hover:to-salmon-600 transition-all shadow-lg hover:shadow-xl"
+                      >
+                        Demanar cita
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -390,6 +374,83 @@ const Servicios = () => {
         {/* Contenido de Talleres - Solo se muestra si hay un taller seleccionado */}
         {activeCategory === 'talleres' && activeService && (
         <section className="mb-32">
+          {/* Formulario para solicitar más información sobre talleres */}
+          <div className="mb-16 bg-gradient-to-br from-white via-rose-50/20 to-white rounded-3xl shadow-2xl p-10 border border-rose-100/50">
+            <h3 className="text-3xl font-extrabold mb-6 text-gray-800 bg-gradient-to-r from-rose-600 to-lilac-600 bg-clip-text text-transparent text-center">
+              Demana més informació sobre els tallers
+            </h3>
+            <form onSubmit={(e) => { e.preventDefault(); alert('Formulari enviat. Et contactarem aviat.'); }} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Nom
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all hover:border-gray-300"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Cognoms
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all hover:border-gray-300"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all hover:border-gray-300"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Telèfon
+                  </label>
+                  <input
+                    type="tel"
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all hover:border-gray-300"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Taller d'interès
+                </label>
+                <input
+                  type="text"
+                  placeholder="Ex: Taller de gestió emocional per a adolescents..."
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all hover:border-gray-300"
+                />
+              </div>
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Observacions
+                </label>
+                <textarea
+                  rows="4"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all hover:border-gray-300"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-rose-500 to-lilac-500 text-white py-4 rounded-xl font-bold hover:from-rose-600 hover:to-lilac-600 transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02] text-lg"
+              >
+                Enviar sol·licitud
+              </button>
+            </form>
+          </div>
           {/* Talleres para Niños y Adolescentes */}
           {activeService === 'talleres-ninos' && (
           <div id="talleres-ninos" className="mb-20 scroll-mt-24">
@@ -838,38 +899,25 @@ const Servicios = () => {
         )}
 
         {/* Sección de Tarifas */}
-        <section className="bg-gradient-to-br from-salmon-50 via-rose-50 to-lilac-50 rounded-3xl p-16 shadow-2xl border border-white/50">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
+        <section className="bg-gradient-to-br from-salmon-50 via-rose-50 to-lilac-50 rounded-3xl p-8 shadow-2xl border border-white/50">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
               Tarifes
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Teràpia Familiar i de Parella</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-6 shadow-lg text-center flex flex-col h-full">
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Teràpia Familiar i de Parella</h3>
               <div className="flex-grow flex flex-col justify-center">
-                <p className="text-4xl font-extrabold text-salmon-600 mb-2">70€</p>
-                <p className="text-gray-600">la sessió</p>
+                <p className="text-3xl font-extrabold text-salmon-600 mb-2">70€</p>
+                <p className="text-gray-600 text-sm">la sessió</p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Sexualitat i Psicologia Perinatal</h3>
+            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-6 shadow-lg text-center flex flex-col h-full">
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Acompanyament psicològic</h3>
               <div className="flex-grow flex flex-col justify-center">
-                <div className="mb-4">
-                  <p className="text-4xl font-extrabold text-rose-600 mb-2">60€</p>
-                  <p className="text-gray-600 text-sm">individual</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-extrabold text-rose-600 mb-2">70€</p>
-                  <p className="text-gray-600 text-sm">amb parella o vincles</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-white via-salmon-50/20 to-white rounded-2xl p-8 shadow-lg text-center flex flex-col h-full">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Acompanyament i Assessorament</h3>
-              <div className="flex-grow flex flex-col justify-center">
-                <p className="text-4xl font-extrabold text-lilac-600 mb-2">50€</p>
-                <p className="text-gray-600">la sessió</p>
+                <p className="text-3xl font-extrabold text-lilac-600 mb-2">50€</p>
+                <p className="text-gray-600 text-sm">la sessió</p>
               </div>
             </div>
           </div>

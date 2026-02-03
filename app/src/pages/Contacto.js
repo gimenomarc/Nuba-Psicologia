@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import CalendarioReservas from '../components/CalendarioReservas';
 
 const Contacto = () => {
   const { t } = useTranslation();
@@ -13,8 +14,11 @@ const Contacto = () => {
     observaciones: '',
   });
   const [citaData, setCitaData] = useState({
-    fecha: '',
+    fecha: null,
     hora: '',
+    nombre: '',
+    email: '',
+    telefono: '',
   });
   const [activeForm, setActiveForm] = useState('informacion');
 
@@ -29,6 +33,21 @@ const Contacto = () => {
     setCitaData({
       ...citaData,
       [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleDateSelect = (date) => {
+    setCitaData({
+      ...citaData,
+      fecha: date,
+      hora: '', // Resetear hora al cambiar de fecha
+    });
+  };
+
+  const handleTimeSelect = (time) => {
+    setCitaData({
+      ...citaData,
+      hora: time,
     });
   };
 
@@ -55,9 +74,6 @@ const Contacto = () => {
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-salmon-600 via-rose-600 to-lilac-600 bg-clip-text text-transparent">
             {t('nav.contacto')}
           </h1>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            Estic aquí per escoltar-te i acompanyar-te en el teu camí cap al benestar emocional
-          </p>
         </div>
 
         {/* Tabs para seleccionar tipo de formulario */}
@@ -165,6 +181,7 @@ const Contacto = () => {
                   <option value="">Seleccionar...</option>
                   <option value="consulta">{t('formularios.informacion.consulta')}</option>
                   <option value="taller">{t('formularios.informacion.taller')}</option>
+                  <option value="hipica">Hípica</option>
                 </select>
               </div>
 
@@ -211,77 +228,91 @@ const Contacto = () => {
             <h2 className="text-3xl font-extrabold mb-8 text-gray-800 bg-gradient-to-r from-salmon-600 to-rose-600 bg-clip-text text-transparent">
               {t('formularios.cita.titulo')}
             </h2>
-            <form onSubmit={handleCitaSubmit} className="space-y-6">
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">
-                  {t('formularios.cita.seleccionarFecha')}
-                </label>
-                <input
-                  type="date"
-                  name="fecha"
-                  value={citaData.fecha}
-                  onChange={handleCitaChange}
-                  required
-                  min={new Date().toISOString().split('T')[0]}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
+            <form onSubmit={handleCitaSubmit} className="space-y-8">
+              {/* Calendario de Reservas */}
+              <div className="bg-gradient-to-br from-white via-rose-50/30 to-white rounded-2xl p-8 border-2 border-rose-100/50">
+                <h3 className="text-xl font-bold mb-6 text-gray-800">
+                  Selecciona dia i hora
+                </h3>
+                <CalendarioReservas
+                  onDateSelect={handleDateSelect}
+                  onTimeSelect={handleTimeSelect}
+                  selectedDate={citaData.fecha}
+                  selectedTime={citaData.hora}
                 />
+                {citaData.fecha && citaData.hora && (
+                  <div className="mt-6 p-4 bg-salmon-50 rounded-xl border-l-4 border-salmon-500">
+                    <p className="text-gray-700 font-semibold">
+                      Cita seleccionada: {citaData.fecha.toLocaleDateString('ca-ES', { 
+                        weekday: 'long', 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                      })} a les {citaData.hora}
+                    </p>
+                  </div>
+                )}
               </div>
 
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">
-                  {t('formularios.cita.hora')}
-                </label>
-                <input
-                  type="time"
-                  name="hora"
-                  value={citaData.hora}
-                  onChange={handleCitaChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
-                />
-              </div>
+              {/* Información de contacto */}
+              <div className="space-y-6">
+                <h3 className="text-xl font-bold text-gray-800">
+                  Dades de contacte
+                </h3>
+                
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    {t('formularios.informacion.nombre')}
+                  </label>
+                  <input
+                    type="text"
+                    name="nombre"
+                    value={citaData.nombre}
+                    onChange={handleCitaChange}
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
+                  />
+                </div>
 
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">
-                  {t('formularios.informacion.nombre')}
-                </label>
-                <input
-                  type="text"
-                  name="nombre"
-                  required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
-                />
-              </div>
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    {t('formularios.informacion.email')}
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={citaData.email}
+                    onChange={handleCitaChange}
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
+                  />
+                </div>
 
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">
-                  {t('formularios.informacion.email')}
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">
-                  {t('formularios.informacion.telefono')}
-                </label>
-                <input
-                  type="tel"
-                  name="telefono"
-                  required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
-                />
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    {t('formularios.informacion.telefono')}
+                  </label>
+                  <input
+                    type="tel"
+                    name="telefono"
+                    value={citaData.telefono}
+                    onChange={handleCitaChange}
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-salmon-500 focus:border-salmon-500 transition-all hover:border-gray-300"
+                  />
+                </div>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-salmon-500 to-rose-500 text-white py-4 rounded-xl font-bold hover:from-salmon-600 hover:to-rose-600 transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02] text-lg"
+                disabled={!citaData.fecha || !citaData.hora}
+                className={`w-full py-4 rounded-xl font-bold transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02] text-lg ${
+                  citaData.fecha && citaData.hora
+                    ? 'bg-gradient-to-r from-salmon-500 to-rose-500 text-white hover:from-salmon-600 hover:to-rose-600'
+                    : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                }`}
               >
-                Solicitar Cita
+                Reservar Cita
               </button>
             </form>
           </div>
@@ -302,6 +333,15 @@ const Contacto = () => {
                   className="text-salmon-600 hover:text-salmon-700 font-bold underline decoration-2 underline-offset-4 transition-colors"
                 >
                   nuriallurba@nubapsicologia.com
+                </a>
+              </p>
+              <p className="text-xl text-gray-700">
+                <strong className="text-gray-800">Telèfon:</strong>{' '}
+                <a
+                  href="tel:699611264"
+                  className="text-salmon-600 hover:text-salmon-700 font-bold underline decoration-2 underline-offset-4 transition-colors"
+                >
+                  699 611 264
                 </a>
               </p>
               <div className="flex justify-center items-center gap-6 mt-8">

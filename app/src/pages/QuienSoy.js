@@ -138,6 +138,13 @@ const QuienSoy = () => {
                       <span className="text-sm font-semibold text-lilac-700">Formació Continuada</span>
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-gray-800">Especialitzacions</h3>
+                    <div className="mb-4 rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/images/IMG_2128.jpg" 
+                        alt="Formació continuada" 
+                        className="w-full h-48 object-cover"
+                      />
+                    </div>
                     <p className="text-lg text-gray-700 leading-relaxed mb-4">
                       Formació complementària en psicologia perinatal i properament també en neuropsicologia per oferir un servei complet i adaptat a diferents necessitats.
                     </p>
@@ -162,26 +169,6 @@ const QuienSoy = () => {
           </div>
         </div>
 
-        {/* Enfoque */}
-        <div className="relative group mb-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-lilac-100/30 to-rose-100/30 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-          <div className="relative bg-gradient-to-br from-lilac-50 to-rose-50 rounded-3xl p-12 shadow-2xl border border-lilac-100">
-            <h3 className="text-4xl font-extrabold mb-8 text-gray-800 flex items-center gap-5">
-              <div className="w-16 h-16 bg-gradient-to-br from-lilac-400 to-lilac-600 rounded-2xl flex items-center justify-center shadow-xl">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              El meu enfocament
-            </h3>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              El meu enfocament es sistèmic però incorporo eines d'altres corrents per poder oferir unes sessions més adaptades a cada persona i circumstància. La teràpia sistèmica parteix de la idea que les dificultats d'una persona no es poden entendre aïlladament, sinó que s'han d'entendre dins del context de les seves relacions i dels sistemes en què participa.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Aquesta perspectiva m'ajuda a veure patrons, connexions i influències que sovint passen desapercebuts, i a intervenir de manera que es generin canvis reals i sostenibles.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
